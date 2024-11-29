@@ -1,12 +1,12 @@
 === Cookies and Content Security Policy ===
 Contributors: jonkastonka
 Donate link: https://www.paypal.com/donate/?hosted_button_id=86UYSXNUA2LHY
-Tags: cookies, cookie bar, gdpr, ccpa, csp, content security policy
+Tags: cookies, cookie bar, gdpr, ccpa, content security policy
 Short Description: Be fully GDPR and CCPA compliant through Content Security Policy. Blocks cookies and unwanted external content.
 Requires at least: 5.0
-Tested up to: 6.5.2
-Requires PHP: 7.0
-Stable tag: 2.26
+Tested up to: 6.7.1
+Requires PHP: 7.4
+Stable tag: 2.27
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,7 +67,7 @@ Review the settings of you cache plugin.
 
 Examples: 
 
-* `Litespeed cache`, go to WP Admin > LiteSpeed Cache > Cache > Excludes, scroll down to "Do Not Cache Cookies" and enter `cookies_and_content_security_policy` and save your changes.
+* `Litespeed cache`, go to WP Admin > LiteSpeed Cache > Advanced, scroll down to "Vary Cookies" and enter `cookies_and_content_security_policy` and save your changes.
 * `Hummingbird`, go to WP Admin > Hummingbird > Caching, scroll down to "Exclusions" and in "Cookies" enter `cookies_and_content_security_policy` and save your changes.
 * `WP Fastest Cache`, go to WP Admin > WP Fastest Cache > Exclude, scroll down to "Exclude Cookies" and click "Add New Rule" and enter `cookies_and_content_security_policy` and save.
 
@@ -191,6 +191,11 @@ Yes, if you go to Settings and check "Save proof of consent". The consent data i
 13. Look in console to see what is blocked. In this case you'd probably like to add https://platform.twitter.com/ to Experience > Script. Or just use Quickstart and choose Twitter.
  
 == Changelog ==
+
+= 2.27 =
+
+* FAQ updates
+* Bug fix for always allowed domain
 
 = 2.26 =
 

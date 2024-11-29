@@ -148,7 +148,8 @@ function cacsp_save_error_message_js( $blog_id = null, $check_exists = false ) {
 		}
 	} else {
 		jQuery(window).on('load', function() {
-			cookiesAndContentPolicyErrorMessage(false, '" . home_url() . "');
+			var cacspAllowedDomains = cacspalways;
+			cookiesAndContentPolicyErrorMessage(cacspAllowedDomains, '" . home_url() . "');
 		});
 	}";
 
