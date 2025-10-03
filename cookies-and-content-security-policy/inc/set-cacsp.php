@@ -115,6 +115,7 @@ function set_content_security_policy() {
 		}
 	}
 	$contentSecurityPolicyBlob = "";
+	$contentSecurityPolicyData = "";
 	if ( $cacsp_option_blob ) {
 		$contentSecurityPolicyBlob = " blob:";
 	}
