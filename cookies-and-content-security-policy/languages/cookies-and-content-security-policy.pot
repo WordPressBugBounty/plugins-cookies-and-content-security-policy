@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cookies and Content Security Policy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-03 08:49+0000\n"
+"POT-Creation-Date: 2026-01-15 15:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -41,7 +41,7 @@ msgstr ""
 msgid "Accept button text"
 msgstr ""
 
-#: inc/settings-cacsp-tab-consent.php:19
+#: inc/settings-cacsp-tab-consent.php:39
 msgid "accepted_cookies"
 msgstr ""
 
@@ -177,11 +177,11 @@ msgstr ""
 msgid "Close button"
 msgstr ""
 
-#: inc/settings-cacsp.php:114 inc/settings-cacsp-tab-colors.php:36
+#: inc/settings-cacsp-tab-colors.php:36 inc/settings-cacsp.php:114
 msgid "Colors"
 msgstr ""
 
-#: inc/settings-cacsp.php:117
+#: inc/settings-cacsp.php:117 inc/settings-cacsp-tab-consent.php:369
 msgid "Consent"
 msgstr ""
 
@@ -223,8 +223,8 @@ msgid "Cookies"
 msgstr ""
 
 #. Name of the plugin
-#: inc/network.php:11 inc/network.php:12 inc/network.php:29
-#: inc/settings-cacsp.php:7 inc/settings-cacsp.php:7 inc/settings-cacsp.php:77
+#: inc/settings-cacsp.php:7 inc/settings-cacsp.php:77 inc/network.php:11
+#: inc/network.php:12 inc/network.php:29
 msgid "Cookies and Content Security Policy"
 msgstr ""
 
@@ -250,6 +250,14 @@ msgstr ""
 
 #: inc/settings-cacsp-tab-settings.php:363
 msgid "Default: 365"
+msgstr ""
+
+#: inc/settings-cacsp-tab-consent.php:255
+msgid "Delete range"
+msgstr ""
+
+#: inc/settings-cacsp-tab-consent.php:68
+msgid "Delete selected"
 msgstr ""
 
 #: inc/settings-cacsp-tab-settings.php:249
@@ -388,7 +396,7 @@ msgstr ""
 msgid "Experience, resources for displaying external videos etc."
 msgstr ""
 
-#: inc/settings-cacsp-tab-consent.php:20
+#: inc/settings-cacsp-tab-consent.php:40
 msgid "expires"
 msgstr ""
 
@@ -410,6 +418,10 @@ msgstr ""
 #: inc/settings-cacsp-tab-domains.php:66 inc/settings-cacsp-tab-domains.php:78
 #: inc/settings-cacsp-tab-domains.php:90 inc/settings-cacsp-tab-domains.php:102
 msgid "Frames"
+msgstr ""
+
+#: inc/settings-cacsp-tab-consent.php:242
+msgid "From"
 msgstr ""
 
 #: inc/settings-cacsp-tab-quickstart.php:49
@@ -464,10 +476,6 @@ msgstr ""
 msgid "Gravatar"
 msgstr ""
 
-#: inc/settings-cacsp-tab-settings.php:295
-msgid "Hide admin email in error messages."
-msgstr ""
-
 #: inc/settings-cacsp-tab-settings.php:93
 msgid "Hide unused sections in Settings."
 msgstr ""
@@ -508,7 +516,7 @@ msgstr ""
 msgid "Hubspot"
 msgstr ""
 
-#: inc/settings-cacsp-tab-consent.php:16
+#: inc/settings-cacsp-tab-consent.php:36
 msgid "id"
 msgstr ""
 
@@ -592,7 +600,7 @@ msgstr ""
 msgid "Instagram"
 msgstr ""
 
-#: inc/settings-cacsp-tab-consent.php:18
+#: inc/settings-cacsp-tab-consent.php:38
 msgid "ip"
 msgstr ""
 
@@ -824,16 +832,20 @@ msgstr ""
 msgid "Save proof of consent"
 msgstr ""
 
-#: inc/network.php:79 inc/settings-cacsp-tab-activate.php:50
 #: inc/settings-cacsp-tab-colors.php:225 inc/settings-cacsp-tab-domains.php:112
-#: inc/settings-cacsp-tab-quickstart.php:396
 #: inc/settings-cacsp-tab-settings.php:406 inc/settings-cacsp-tab-texts.php:84
+#: inc/settings-cacsp-tab-quickstart.php:396 inc/network.php:79
+#: inc/settings-cacsp-tab-activate.php:50
 msgid "Save Settings"
 msgstr ""
 
 #: inc/settings-cacsp-tab-domains.php:64 inc/settings-cacsp-tab-domains.php:76
 #: inc/settings-cacsp-tab-domains.php:88 inc/settings-cacsp-tab-domains.php:100
 msgid "Scripts"
+msgstr ""
+
+#: inc/settings-cacsp-tab-consent.php:287
+msgid "Security check failed."
 msgstr ""
 
 #: inc/settings-cacsp-tab-domains.php:16
@@ -867,6 +879,10 @@ msgstr ""
 msgid "Settings text"
 msgstr ""
 
+#: inc/settings-cacsp-tab-settings.php:295
+msgid "Show admin email in error messages."
+msgstr ""
+
 #: inc/settings-cacsp-tab-settings.php:127
 msgid "Show close button (&times;)."
 msgstr ""
@@ -875,7 +891,7 @@ msgstr ""
 msgid "Show refuse cookies button."
 msgstr ""
 
-#: inc/settings-cacsp-tab-consent.php:21
+#: inc/settings-cacsp-tab-consent.php:41
 msgid "site"
 msgstr ""
 
@@ -925,7 +941,7 @@ msgid ""
 "role."
 msgstr ""
 
-#: inc/settings-cacsp.php:109 inc/settings-cacsp-tab-colors.php:73
+#: inc/settings-cacsp-tab-colors.php:73 inc/settings-cacsp.php:109
 #: inc/settings-cacsp-tab-texts.php:58
 msgid "Texts"
 msgstr ""
@@ -962,12 +978,16 @@ msgid ""
 "&gt;head&lt; tag."
 msgstr ""
 
-#: inc/settings-cacsp-tab-consent.php:17
+#: inc/settings-cacsp-tab-consent.php:37
 msgid "time"
 msgstr ""
 
 #: inc/settings-cacsp-tab-settings.php:366
 msgid "Timeout"
+msgstr ""
+
+#: inc/settings-cacsp-tab-consent.php:247
+msgid "To"
 msgstr ""
 
 #: inc/settings-cacsp-tab-quickstart.php:183
@@ -1074,15 +1094,15 @@ msgid "Your main site"
 msgstr ""
 
 #: inc/settings-cacsp-update-options.php:22
-#: inc/settings-cacsp-update-options.php:597
-#: inc/settings-cacsp-update-options.php:623
-#: inc/settings-cacsp-update-options.php:657
-#: inc/settings-cacsp-update-options.php:683
-#: inc/settings-cacsp-update-options.php:691
+#: inc/settings-cacsp-update-options.php:600
+#: inc/settings-cacsp-update-options.php:626
+#: inc/settings-cacsp-update-options.php:660
+#: inc/settings-cacsp-update-options.php:686
+#: inc/settings-cacsp-update-options.php:694
 msgid "Your settings are now updated"
 msgstr ""
 
-#: inc/settings-cacsp-update-options.php:549
+#: inc/settings-cacsp-update-options.php:552
 msgid ""
 "Your settings are now updated in <a href=\"?"
 "page=cacsp_settings&tab=domains\">Domains</a>"

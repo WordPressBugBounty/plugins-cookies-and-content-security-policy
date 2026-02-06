@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Cookies and Content Security Policy - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-03 08:53+0000\n"
+"PO-Revision-Date: 2026-01-15 15:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Language: sv_SE\n"
 "Project-Id-Version: Plugins - Cookies and Content Security Policy - Stable "
 "(latest release)\n"
-"Language-Team: Swedish\n"
+"Language-Team: Svenska\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-25 07:20+0000\n"
 "Last-Translator: Testing stuff\n"
@@ -42,7 +42,7 @@ msgstr "Färg på acceptera-knapp"
 msgid "Accept button text"
 msgstr "Färg på acceptera-knappens text"
 
-#: inc/settings-cacsp-tab-consent.php:19
+#: inc/settings-cacsp-tab-consent.php:39
 msgid "accepted_cookies"
 msgstr "accepted_cookies"
 
@@ -192,11 +192,11 @@ msgstr "Stäng"
 msgid "Close button"
 msgstr "Stäng-knapp"
 
-#: inc/settings-cacsp.php:114 inc/settings-cacsp-tab-colors.php:36
+#: inc/settings-cacsp-tab-colors.php:36 inc/settings-cacsp.php:114
 msgid "Colors"
 msgstr "Färger"
 
-#: inc/settings-cacsp.php:117
+#: inc/settings-cacsp.php:117 inc/settings-cacsp-tab-consent.php:369
 msgid "Consent"
 msgstr "Samtycke"
 
@@ -238,8 +238,8 @@ msgid "Cookies"
 msgstr "Kakor"
 
 #. Name of the plugin
-#: inc/network.php:11 inc/network.php:12 inc/network.php:29
-#: inc/settings-cacsp.php:7 inc/settings-cacsp.php:7 inc/settings-cacsp.php:77
+#: inc/settings-cacsp.php:7 inc/settings-cacsp.php:77 inc/network.php:11
+#: inc/network.php:12 inc/network.php:29
 msgid "Cookies and Content Security Policy"
 msgstr "Cookies och Content Security Policy"
 
@@ -266,6 +266,14 @@ msgstr "Standard: 1000"
 #: inc/settings-cacsp-tab-settings.php:363
 msgid "Default: 365"
 msgstr "Default: 365"
+
+#: inc/settings-cacsp-tab-consent.php:255
+msgid "Delete range"
+msgstr "Ta bort intervall"
+
+#: inc/settings-cacsp-tab-consent.php:68
+msgid "Delete selected"
+msgstr "Ta bort valda"
 
 #: inc/settings-cacsp-tab-settings.php:249
 #| msgid "Disable content not allowed message"
@@ -422,7 +430,7 @@ msgstr "Upplevelse, rubrik"
 msgid "Experience, resources for displaying external videos etc."
 msgstr "Upplevelse, resurser för att visa externa videos etc."
 
-#: inc/settings-cacsp-tab-consent.php:20
+#: inc/settings-cacsp-tab-consent.php:40
 msgid "expires"
 msgstr "expires"
 
@@ -447,6 +455,10 @@ msgstr "Formulär"
 #: inc/settings-cacsp-tab-domains.php:90 inc/settings-cacsp-tab-domains.php:102
 msgid "Frames"
 msgstr "Frames"
+
+#: inc/settings-cacsp-tab-consent.php:242
+msgid "From"
+msgstr "Från"
 
 #: inc/settings-cacsp-tab-quickstart.php:49
 msgid "Google"
@@ -500,10 +512,6 @@ msgstr "Mormor-mode."
 msgid "Gravatar"
 msgstr "Gravatar"
 
-#: inc/settings-cacsp-tab-settings.php:295
-msgid "Hide admin email in error messages."
-msgstr "Dölj e-postadress för administration i felmeddelanden."
-
 #: inc/settings-cacsp-tab-settings.php:93
 msgid "Hide unused sections in Settings."
 msgstr "Dölj oanvända sektioner under Inställningar."
@@ -549,7 +557,7 @@ msgstr ""
 msgid "Hubspot"
 msgstr "Hubspot"
 
-#: inc/settings-cacsp-tab-consent.php:16
+#: inc/settings-cacsp-tab-consent.php:36
 msgid "id"
 msgstr "id"
 
@@ -662,7 +670,7 @@ msgstr "Info"
 msgid "Instagram"
 msgstr "Instagram"
 
-#: inc/settings-cacsp-tab-consent.php:18
+#: inc/settings-cacsp-tab-consent.php:38
 msgid "ip"
 msgstr "ip"
 
@@ -899,10 +907,10 @@ msgstr "Färg på spara-knappens text"
 msgid "Save proof of consent"
 msgstr "Spara bevis på samtycke"
 
-#: inc/network.php:79 inc/settings-cacsp-tab-activate.php:50
 #: inc/settings-cacsp-tab-colors.php:225 inc/settings-cacsp-tab-domains.php:112
-#: inc/settings-cacsp-tab-quickstart.php:396
 #: inc/settings-cacsp-tab-settings.php:406 inc/settings-cacsp-tab-texts.php:84
+#: inc/settings-cacsp-tab-quickstart.php:396 inc/network.php:79
+#: inc/settings-cacsp-tab-activate.php:50
 msgid "Save Settings"
 msgstr "Spara inställningar"
 
@@ -910,6 +918,10 @@ msgstr "Spara inställningar"
 #: inc/settings-cacsp-tab-domains.php:88 inc/settings-cacsp-tab-domains.php:100
 msgid "Scripts"
 msgstr "Script"
+
+#: inc/settings-cacsp-tab-consent.php:287
+msgid "Security check failed."
+msgstr "Säkerhetskontroll misslyckades."
 
 #: inc/settings-cacsp-tab-domains.php:16
 msgid ""
@@ -944,6 +956,11 @@ msgstr "Färg på inställningar-knappens text"
 msgid "Settings text"
 msgstr "Text för inställningar"
 
+#: inc/settings-cacsp-tab-settings.php:295
+#| msgid "Hide admin email in error messages."
+msgid "Show admin email in error messages."
+msgstr "Visa e-postadress för administration i felmeddelanden."
+
 #: inc/settings-cacsp-tab-settings.php:127
 msgid "Show close button (&times;)."
 msgstr "Visa stäng-knapp (&times;)."
@@ -952,7 +969,7 @@ msgstr "Visa stäng-knapp (&times;)."
 msgid "Show refuse cookies button."
 msgstr "Visa neka cookies-knapp."
 
-#: inc/settings-cacsp-tab-consent.php:21
+#: inc/settings-cacsp-tab-consent.php:41
 msgid "site"
 msgstr "site"
 
@@ -1006,7 +1023,7 @@ msgstr ""
 "Security Policy kommer bara att synas för inloggade användare med rollen "
 "Administratör."
 
-#: inc/settings-cacsp.php:109 inc/settings-cacsp-tab-colors.php:73
+#: inc/settings-cacsp-tab-colors.php:73 inc/settings-cacsp.php:109
 #: inc/settings-cacsp-tab-texts.php:58
 msgid "Texts"
 msgstr "Texter"
@@ -1053,13 +1070,17 @@ msgstr ""
 "Detta kommer att skiva ut hjälpsamma kommentarer i början av din sida inuti "
 "&gt;head&lt;-taggen."
 
-#: inc/settings-cacsp-tab-consent.php:17
+#: inc/settings-cacsp-tab-consent.php:37
 msgid "time"
 msgstr "time"
 
 #: inc/settings-cacsp-tab-settings.php:366
 msgid "Timeout"
 msgstr "Paus"
+
+#: inc/settings-cacsp-tab-consent.php:247
+msgid "To"
+msgstr "Till"
 
 #: inc/settings-cacsp-tab-quickstart.php:183
 msgid "Twitter"
@@ -1181,15 +1202,15 @@ msgid "Your main site"
 msgstr "Din huvudwebbplats"
 
 #: inc/settings-cacsp-update-options.php:22
-#: inc/settings-cacsp-update-options.php:597
-#: inc/settings-cacsp-update-options.php:623
-#: inc/settings-cacsp-update-options.php:657
-#: inc/settings-cacsp-update-options.php:683
-#: inc/settings-cacsp-update-options.php:691
+#: inc/settings-cacsp-update-options.php:600
+#: inc/settings-cacsp-update-options.php:626
+#: inc/settings-cacsp-update-options.php:660
+#: inc/settings-cacsp-update-options.php:686
+#: inc/settings-cacsp-update-options.php:694
 msgid "Your settings are now updated"
 msgstr "Dina inställningar är nu uppdaterade"
 
-#: inc/settings-cacsp-update-options.php:549
+#: inc/settings-cacsp-update-options.php:552
 msgid ""
 "Your settings are now updated in <a href=\"?"
 "page=cacsp_settings&tab=domains\">Domains</a>"

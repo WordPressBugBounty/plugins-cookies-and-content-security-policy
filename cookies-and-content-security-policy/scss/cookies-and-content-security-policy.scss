@@ -420,7 +420,7 @@ body.modal-cacsp-open {
 					&.modal-cacsp-box-bottom {
 						&::before {
 							content: '';
-							background: url(../img/cookie.png) left top no-repeat;
+							background: url(../img/cookie.webp) left top no-repeat;
 							width: 250px;
 							height: 163px;
 							display: block;
@@ -446,7 +446,7 @@ body.modal-cacsp-open {
 					.modal-cacsp-box-header {
 						&::before {
 							content: '';
-							background: url(../img/cookie.png) left top no-repeat;
+							background: url(../img/cookie.webp) left top no-repeat;
 							width: 160px;
 							height: 160px;
 							display: block;
@@ -469,7 +469,7 @@ body.modal-cacsp-open {
 					}
 					&::before {
 						content: '';
-						background: url(../img/grandma.png) left top no-repeat;
+						background: url(../img/grandma.webp) left top no-repeat;
 						width: 420px;
 						height: 800px;
 						display: block;
@@ -485,7 +485,7 @@ body.modal-cacsp-open {
 						.modal-cacsp-box-header {
 							&::before {
 								content: '';
-								background: url(../img/grandma.png) left top no-repeat;
+								background: url(../img/grandma.webp) left top no-repeat;
 								-webkit-transform: scaleX(-1);
   								transform: scaleX(-1);
 								width: 100px;

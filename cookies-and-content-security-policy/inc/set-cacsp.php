@@ -200,11 +200,11 @@ add_action( 'rest_api_init', function () {
 } );
 
 function cacsp_texts( $data ) {
-	$hide_admin_email = get_cacsp_options( 'cacsp_option_settings_admin_email' );;
-	if ( $hide_admin_email ) {
-		$admin_email = '';
-	} else {
+	$show_admin_email = get_cacsp_options( 'cacsp_option_settings_admin_email' );;
+	if ( $show_admin_email ) {
 		$admin_email = get_option( 'admin_email' );
+	} else {
+		$admin_email = '';
 	}
 	return array(
 		'warning_texts' => array(

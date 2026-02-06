@@ -4,9 +4,9 @@ Donate link: https://www.paypal.com/donate/?hosted_button_id=86UYSXNUA2LHY
 Tags: cookies, cookie bar, gdpr, ccpa, content security policy
 Short Description: Be fully GDPR and CCPA compliant through Content Security Policy. Blocks cookies and unwanted external content.
 Requires at least: 5.0
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.32
+Stable tag: 2.35
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -193,6 +193,20 @@ Yes, if you go to Settings and check "Save proof of consent". The consent data i
 13. Look in console to see what is blocked. In this case you'd probably like to add https://platform.twitter.com/ to Experience > Script. Or just use Quickstart and choose Twitter.
  
 == Changelog ==
+
+= 2.35 =
+* Make "Show admin email in error messages" false by default
+
+= 2.34 =
+
+* Delete old png files (left in 2.33 for cache reasons)
+* Function for deleting consents
+
+= 2.33 =
+
+* Better handling of referrers for Google Analytics
+* Grandma and Cookie images are now in webp, and thereby faster to load
+* Updated quickstart for Instagram
 
 = 2.32 =
 

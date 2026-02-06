@@ -292,7 +292,7 @@ $cacsp_option_bypass_ips = get_cacsp_options( 'cacsp_option_bypass_ips', false, 
 						$checked = '';
 					} ?>
 					<input type="checkbox" name="cacsp_option_settings_admin_email" id="cacsp_option_settings_admin_email" value="1"<?php echo $checked; ?>> 
-						<?php esc_html_e( 'Hide admin email in error messages.', 'cookies-and-content-security-policy' ); ?>
+						<?php esc_html_e( 'Show admin email in error messages.', 'cookies-and-content-security-policy' ); ?>
 				</label>
 				<br>
 				<label for="cacsp_option_wpengine_compatibility_mode">

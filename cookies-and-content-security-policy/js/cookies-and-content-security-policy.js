@@ -342,15 +342,21 @@ function cookiesAndContentPolicyTrailingSlash(url) {
 }
 
 function gaSetReferrer() {
-	if ( document.referrer.indexOf(location.protocol + "//" + location.host) !== 0 && !Cookies.get(CACSP_COOKIE_NAME) && document.referrer ) {
-		Cookies.set('ga_page_referrer', document.referrer);
+	const ref = document.referrer;
+	const sameOrigin = ref.indexOf(location.protocol + "//" + location.host) === 0;
+	const hasConsent = Cookies.get(CACSP_COOKIE_NAME);
+	const storedRef = Cookies.get('ga_page_referrer');
+	// Store referrer if external and no consent yet
+	if (ref && !sameOrigin && !hasConsent) {
+		Cookies.set('ga_page_referrer', ref);
 	}
-	if (Cookies.get('ga_page_referrer') && Cookies.get(CACSP_COOKIE_NAME)) {
-		if (typeof gtag != 'function') {
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-		}
-		gtag('set', 'page_referrer', Cookies.get(CACSP_COOKIE_NAME));
+	// Send to GA once consent is given
+	if (storedRef && hasConsent) {
+		// Make sure dataLayer and gtag exist
+		window.dataLayer = window.dataLayer || [];
+		window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+		// Set referrer
+		gtag('set', 'page_referrer', storedRef);
 		Cookies.remove('ga_page_referrer');
 	}
 }
