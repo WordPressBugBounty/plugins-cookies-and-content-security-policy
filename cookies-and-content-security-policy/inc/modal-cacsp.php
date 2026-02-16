@@ -15,6 +15,14 @@ if ( !get_cacsp_options( 'cacsp_option_only_csp' ) && !is_admin() ) {
 			$cacsp_option_banner_class = '';
 			if ( $cacsp_option_banner ) {
 				$cacsp_option_banner_class = ' modal-cacsp-box-bottom';
+				$cacsp_option_banner_float = get_cacsp_options( 'cacsp_option_banner_float' );
+				if ( $cacsp_option_banner_float ) {
+					$cacsp_option_banner_class .= ' modal-cacsp-box-bottom-float';
+					$cacsp_option_banner_float_small = get_cacsp_options( 'cacsp_option_banner_float_small' );
+					if ( $cacsp_option_banner_float_small ) {
+						$cacsp_option_banner_class .= ' modal-cacsp-box-bottom-float-small';
+					}
+				}
 			}
 			?>
 			<!--googleoff: index-->

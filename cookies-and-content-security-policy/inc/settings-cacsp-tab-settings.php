@@ -13,12 +13,6 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 $cacsp_option_only_csp = get_cacsp_options( 'cacsp_option_only_csp', false, '', true );
 $cacsp_option_own_style = get_cacsp_options( 'cacsp_option_own_style', false, '', true );
 $cacsp_option_own_js = get_cacsp_options( 'cacsp_option_own_js', false, '', true );
-$cacsp_option_banner = get_cacsp_options( 'cacsp_option_banner', false, '', true );
-$cacsp_option_allow_use_site = get_cacsp_options( 'cacsp_option_allow_use_site', false, '', true );
-$cacsp_option_hide_unused_settings_row = get_cacsp_options( 'cacsp_option_hide_unused_settings_row', false, '', true );
-$cacsp_option_grandma = get_cacsp_options( 'cacsp_option_grandma', false, '', true );
-$cacsp_option_show_refuse_button = get_cacsp_options( 'cacsp_option_show_refuse_button', false, '', true );
-$cacsp_option_settings_close_button = get_cacsp_options( 'cacsp_option_settings_close_button', false, '', true );
 $cacsp_option_settings_save_consent = get_cacsp_options( 'cacsp_option_settings_save_consent', false, '', true );
 $cacsp_option_forms = get_cacsp_options( 'cacsp_option_forms', false, '', true );
 $cacsp_option_worker = get_cacsp_options( 'cacsp_option_worker', false, '', true );
@@ -59,72 +53,6 @@ $cacsp_option_bypass_ips = get_cacsp_options( 'cacsp_option_bypass_ips', false, 
 						<?php esc_html_e( 'Only use CSP, no modal for me.', 'cookies-and-content-security-policy' ); ?>
 						<br>
 						<small><?php esc_html_e( 'This will only make use of domains in Always allowed.', 'cookies-and-content-security-policy' ); ?></small>
-				</label>
-				<br>
-				<label for="cacsp_option_banner">
-					<?php if ( $cacsp_option_banner ) {
-						$checked = ' checked';
-					} else {
-						$checked = '';
-					} ?>
-					<input type="checkbox" name="cacsp_option_banner" id="cacsp_option_banner" value="1"<?php echo $checked; ?>> 
-						<?php esc_html_e( 'Do not use a modal, I want a banner.', 'cookies-and-content-security-policy' ); ?>
-				</label>
-				<br>
-				<label for="cacsp_option_allow_use_site">
-					<?php if ( $cacsp_option_allow_use_site ) {
-						$checked = ' checked';
-					} else {
-						$checked = '';
-					} ?>
-					<input type="checkbox" name="cacsp_option_allow_use_site" id="cacsp_option_allow_use_site" value="1"<?php echo $checked; ?>> 
-						<?php esc_html_e( 'Allow user to access site without saving settings.', 'cookies-and-content-security-policy' ); ?>
-						<br>
-						<small><?php esc_html_e( 'Only works with banner.', 'cookies-and-content-security-policy' ); ?></small>
-				</label>
-				<br>
-				<label for="cacsp_option_hide_unused_settings_row">
-					<?php if ( $cacsp_option_hide_unused_settings_row ) {
-						$checked = ' checked';
-					} else {
-						$checked = '';
-					} ?>
-					<input type="checkbox" name="cacsp_option_hide_unused_settings_row" id="cacsp_option_hide_unused_settings_row" value="1"<?php echo $checked; ?>> 
-						<?php esc_html_e( 'Hide unused sections in Settings.', 'cookies-and-content-security-policy' ); ?>
-						<br>
-						<small><?php esc_html_e( 'Example: If you don\'t have any domains specified for Marketing, that setting won\'t show for the visitor.', 'cookies-and-content-security-policy' ); ?></small>
-				</label>
-				<br>
-				<label for="cacsp_option_grandma">
-					<?php if ( $cacsp_option_grandma ) {
-						$checked = ' checked';
-					} else {
-						$checked = '';
-					} ?>
-					<input type="checkbox" name="cacsp_option_grandma" id="cacsp_option_grandma" value="1"<?php echo $checked; ?>> 
-						<?php esc_html_e( 'Grandma mode.', 'cookies-and-content-security-policy' ); ?>
-						<br>
-						<small><?php esc_html_e( 'Add grandma with milk and cookies.', 'cookies-and-content-security-policy' ); ?></small>
-				</label>
-				<br>
-				<label for="cacsp_option_show_refuse_button">
-					<?php if ( $cacsp_option_show_refuse_button ) {
-						$checked = ' checked';
-					} else {
-						$checked = '';
-					} ?>
-					<input type="checkbox" name="cacsp_option_show_refuse_button" id="cacsp_option_show_refuse_button" value="1"<?php echo $checked; ?>> 
-						<?php esc_html_e( 'Show refuse cookies button.', 'cookies-and-content-security-policy' ); ?>
-				</label>
-				<br>
-				<label for="cacsp_option_settings_close_button">
-					<?php if ( $cacsp_option_settings_close_button ) {
-						$checked = ' checked';
-					} else {
-						$checked = '';
-					} ?>
-					<input type="checkbox" name="cacsp_option_settings_close_button" id="cacsp_option_settings_close_button" value="1"<?php echo $checked; ?>> 
-						<?php esc_html_e( 'Show close button (&times;).', 'cookies-and-content-security-policy' ); ?>
 				</label>
 				<br>
 				<label for="cacsp_option_google_consent_mode">
@@ -407,20 +335,6 @@ $cacsp_option_bypass_ips = get_cacsp_options( 'cacsp_option_bypass_ips', false, 
 </div>
 
 <script>
-	// Show/hide "Allow user to access site without saving settings"
-	if ( !jQuery('label[for="cacsp_option_banner"] input').is(":checked") ) {
-		jQuery('label[for="cacsp_option_allow_use_site"]').hide();
-		jQuery('label[for="cacsp_option_allow_use_site"]').next('br').hide();
-	}
-	jQuery('label[for="cacsp_option_banner"] input').change(function() {
-		if ( jQuery('label[for="cacsp_option_banner"] input').is(":checked") ) {
-			jQuery('label[for="cacsp_option_allow_use_site"]').show();
-			jQuery('label[for="cacsp_option_allow_use_site"]').next('br').show();
-		} else {
-			jQuery('label[for="cacsp_option_allow_use_site"]').hide();
-			jQuery('label[for="cacsp_option_allow_use_site"]').next('br').hide();
-		}
-	});
 	// Show/hide "IPs to bypass"
 	if ( !jQuery('label[for="cacsp_option_bypass_ip"] input').is(":checked") ) {
 		jQuery('label[for="cacsp_option_bypass_ip"] input').parent().parent().parent().next().hide();

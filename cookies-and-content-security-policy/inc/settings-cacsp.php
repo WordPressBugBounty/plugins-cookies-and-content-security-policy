@@ -111,6 +111,9 @@ function cacsp_options() {
 					<a href="?page=cacsp_settings&tab=settings" class="nav-tab <?php echo $active_tab == 'settings' ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Settings', 'cookies-and-content-security-policy' ); ?></a>
 				<?php } ?>
 				<?php if ( !$show_only_text ) { ?>
+					<a href="?page=cacsp_settings&tab=design" class="nav-tab <?php echo $active_tab == 'design' ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Design', 'cookies-and-content-security-policy' ); ?></a>
+				<?php } ?>
+				<?php if ( !$show_only_text ) { ?>
 					<a href="?page=cacsp_settings&tab=colors" class="nav-tab <?php echo $active_tab == 'colors' ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Colors', 'cookies-and-content-security-policy' ); ?></a>
 				<?php } ?>
 				<?php if ( !$show_only_text && get_cacsp_options( 'cacsp_option_settings_save_consent', false, '0' ) == 1 ) { ?>
@@ -131,6 +134,8 @@ function cacsp_options() {
 				include_once( 'settings-cacsp-tab-texts.php' );
 			} elseif ( $active_tab == 'settings' ) {
 				include_once( 'settings-cacsp-tab-settings.php' );
+			} elseif ( $active_tab == 'design' ) {
+				include_once( 'settings-cacsp-tab-design.php' );
 			} elseif ( $active_tab == 'colors' ) {
 				include_once( 'settings-cacsp-tab-colors.php' );
 			} elseif ( $active_tab == 'consent' ) {

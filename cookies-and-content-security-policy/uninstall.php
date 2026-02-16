@@ -56,6 +56,7 @@ $cacsp_options = array(
 	'cacsp_option_refuse_button', 
 	'cacsp_option_show_refuse_button', 
 	'cacsp_option_settings_close_button', 
+	'cacsp_option_dark_mode', 
 	'cacsp_option_forms', 
 	'cacsp_option_worker', 
 	'cacsp_option_blob', 

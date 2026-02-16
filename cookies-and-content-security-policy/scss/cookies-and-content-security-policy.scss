@@ -140,6 +140,18 @@ body.modal-cacsp-open {
 				border-radius: 0;
 				border-top: 1px solid $gray-light;
 				background-color: $modal-bg;
+				> * {
+					background-color: transparent;
+				}
+				&.modal-cacsp-box-bottom-float {
+					margin: 2rem;
+					border-radius: 1rem;
+					width: calc(100% - 4rem);
+					max-width: calc(100% - 4rem);
+					box-shadow: 0 0 2rem rgba($black,.4);
+					border-top: 0;
+				}
+				
 				@include responsive(width-max-regular-down) {
 					flex-wrap: wrap;
 				}
@@ -170,12 +182,42 @@ body.modal-cacsp-open {
 				.modal-cacsp-box-content,
 				.modal-cacsp-btns {
 					@include responsive(width-max-regular-down) {
-						width: 100%
+						width: 100%;
+					}
+				}
+				&.modal-cacsp-box-bottom-float-small {
+					max-width: calc(320px - 4rem);
+					min-width: 200px;
+					flex-wrap: wrap;
+					.modal-cacsp-box-content,
+					.modal-cacsp-btns {
+						flex-wrap: wrap;
+						width: 100%;
+						font-size: .8em;
+					}
+					.modal-cacsp-box-content {
+						padding-bottom: 16px;
+					}
+					.modal-cacsp-btns {
+						border: 0;
+						padding-top: 0;
+						white-space: normal;
+						.modal-cacsp-btn {
+							width: 100%;
+							max-width: 100%;
+							margin-right: 0;
+							margin-bottom: 8px;
+						}
 					}
 				}
 			}
 		}
 		&.modal-cacsp-box-settings {
+			/*
+			> * {
+				background-color: $modal-bg;
+			}
+				*/
 			.modal-cacsp-box-settings-list {
 				ul {
 					list-style: none;
@@ -435,11 +477,22 @@ body.modal-cacsp-open {
 								top: -140px;
 							}
 						}
-						.modal-cacsp-box-content {
-							padding-left: 200px;
-							width: 100%;
-							@include responsive(width-max-medium-down) {
-								padding-left: 32px;
+						&.modal-cacsp-box-bottom-float-small {
+							&::before {
+								width: 125px;
+								height: 82px;
+								width: 100%;
+								left: 0;
+								top: -55px;
+							}
+						}
+						&:not(.modal-cacsp-box-bottom-float-small) {
+							.modal-cacsp-box-content {
+								padding-left: 200px;
+								width: 100%;
+								@include responsive(width-max-medium-down) {
+									padding-left: 32px;
+								}
 							}
 						}
 					}

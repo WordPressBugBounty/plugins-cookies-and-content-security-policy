@@ -6,7 +6,7 @@ Short Description: Be fully GDPR and CCPA compliant through Content Security Pol
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.35
+Stable tag: 2.36
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -193,6 +193,12 @@ Yes, if you go to Settings and check "Save proof of consent". The consent data i
 13. Look in console to see what is blocked. In this case you'd probably like to add https://platform.twitter.com/ to Experience > Script. Or just use Quickstart and choose Twitter.
  
 == Changelog ==
+
+= 2.36 =
+* New settings tab: Design
+* New design: Floating banner
+* New design: Small floating banner
+* New design: Dark mode
 
 = 2.35 =
 * Make "Show admin email in error messages" false by default

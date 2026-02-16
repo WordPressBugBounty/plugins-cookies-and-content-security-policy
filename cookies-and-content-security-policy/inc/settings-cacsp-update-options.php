@@ -629,12 +629,6 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 	update_option( 'cacsp_option_only_csp', intval( isset( $_POST['cacsp_option_only_csp'] ) ) );
 	update_option( 'cacsp_option_own_style', intval( isset( $_POST['cacsp_option_own_style'] ) ) );
 	update_option( 'cacsp_option_own_js', intval( isset( $_POST['cacsp_option_own_js'] ) ) );
-	update_option( 'cacsp_option_banner', intval( isset( $_POST['cacsp_option_banner'] ) ) );
-	update_option( 'cacsp_option_allow_use_site', intval( isset( $_POST['cacsp_option_allow_use_site'] ) ) );
-	update_option( 'cacsp_option_grandma', intval( isset( $_POST['cacsp_option_grandma'] ) ) );
-	update_option( 'cacsp_option_hide_unused_settings_row', intval( isset( $_POST['cacsp_option_hide_unused_settings_row'] ) ) );
-	update_option( 'cacsp_option_show_refuse_button', intval( isset( $_POST['cacsp_option_show_refuse_button'] ) ) );
-	update_option( 'cacsp_option_settings_close_button', intval( isset( $_POST['cacsp_option_settings_close_button'] ) ) );
 	update_option( 'cacsp_option_settings_save_consent', intval( isset( $_POST['cacsp_option_settings_save_consent'] ) ) );
 	update_option( 'cacsp_option_forms', intval( isset( $_POST['cacsp_option_forms'] ) ) );
 	update_option( 'cacsp_option_worker', intval( isset( $_POST['cacsp_option_worker'] ) ) );
@@ -656,6 +650,26 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 	update_option( 'cacsp_option_settings_timeout', intval( $_POST['cacsp_option_settings_timeout'] ) );
 	update_option( 'cacsp_option_bypass_ip', intval( isset( $_POST['cacsp_option_bypass_ip'] ) ) );
 	update_option( 'cacsp_option_bypass_ips', cacsp_sanitize_ip( $_POST['cacsp_option_bypass_ips'] ) );
+	echo '<div id="message" class="updated fade">
+		<p>' . __( 'Your settings are now updated', 'cookies-and-content-security-policy' ) . '</p>
+	</div>';
+} elseif ( isset( $_POST['save_cacsp_settings_design'] ) && $can_change_all ) {
+	update_option( 'cacsp_option_banner', intval( isset( $_POST['cacsp_option_banner'] ) ) );
+	update_option( 'cacsp_option_banner_float', intval( isset( $_POST['cacsp_option_banner_float'] ) ) );
+	update_option( 'cacsp_option_banner_float_small', intval( isset( $_POST['cacsp_option_banner_float_small'] ) ) );
+	update_option( 'cacsp_option_allow_use_site', intval( isset( $_POST['cacsp_option_allow_use_site'] ) ) );
+	update_option( 'cacsp_option_grandma', intval( isset( $_POST['cacsp_option_grandma'] ) ) );
+	update_option( 'cacsp_option_hide_unused_settings_row', intval( isset( $_POST['cacsp_option_hide_unused_settings_row'] ) ) );
+	update_option( 'cacsp_option_show_refuse_button', intval( isset( $_POST['cacsp_option_show_refuse_button'] ) ) );
+	update_option( 'cacsp_option_settings_close_button', intval( isset( $_POST['cacsp_option_settings_close_button'] ) ) );
+	update_option( 'cacsp_option_dark_mode', intval( isset( $_POST['cacsp_option_dark_mode'] ) ) );
+	if ( intval( isset( $_POST['cacsp_option_dark_mode'] ) ) ) {
+		update_option( 'cacsp_option_color_modal_bg', sanitize_hex_color( '#444444' ) );
+		update_option( 'cacsp_option_color_modal_header_bg', sanitize_hex_color( '#2b2b2b' ) );
+		update_option( 'cacsp_option_color_modal_list_border', sanitize_hex_color( '#8e8e8e' ) );
+		update_option( 'cacsp_option_color_modal_text_color', sanitize_hex_color( '#ffffff' ) );
+		update_option( 'cacsp_option_color_modal_header_text_color', sanitize_hex_color( '#ffffff' ) );
+	}
 	echo '<div id="message" class="updated fade">
 		<p>' . __( 'Your settings are now updated', 'cookies-and-content-security-policy' ) . '</p>
 	</div>';

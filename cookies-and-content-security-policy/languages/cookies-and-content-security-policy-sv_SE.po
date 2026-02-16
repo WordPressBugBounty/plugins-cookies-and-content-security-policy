@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Cookies and Content Security Policy - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-01-15 15:43+0000\n"
+"PO-Revision-Date: 2026-01-18 14:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Last-Translator: Testing stuff\n"
 "X-Loco-Version: 2.6.6; wp-6.4.3"
 
-#: inc/settings-cacsp-tab-settings.php:402
+#: inc/settings-cacsp-tab-settings.php:330
 msgid "127.0.0.1<br>13.37.841.01"
 msgstr "127.0.0.1<br>13.37.841.01"
 
-#: inc/modal-cacsp.php:59 inc/modal-cacsp.php:168
+#: inc/modal-cacsp.php:67 inc/modal-cacsp.php:176
 #: inc/settings-cacsp-tab-texts.php:74
 msgid "Accept all"
 msgstr "Acceptera alla"
@@ -58,7 +58,7 @@ msgstr "Aktivera pluginet för att använda det."
 msgid "Active"
 msgstr "Aktivt"
 
-#: inc/settings-cacsp-tab-settings.php:107
+#: inc/settings-cacsp-tab-design.php:118
 msgid "Add grandma with milk and cookies."
 msgstr "Lägg till mormor som serverar mjölk och kakor."
 
@@ -66,11 +66,11 @@ msgstr "Lägg till mormor som serverar mjölk och kakor."
 msgid "Admin"
 msgstr "Admin"
 
-#: inc/settings-cacsp-tab-settings.php:146
+#: inc/settings-cacsp-tab-settings.php:74
 msgid "Advanced settings"
 msgstr "Avancerade inställningar"
 
-#: inc/settings-cacsp-tab-settings.php:363
+#: inc/settings-cacsp-tab-settings.php:291
 msgid "After how many days the accept cookie should expire."
 msgstr "Efter hur många dagar ska accept-cookien upphöra att gälla."
 
@@ -79,16 +79,16 @@ msgstr "Efter hur många dagar ska accept-cookien upphöra att gälla."
 msgid "Allow background scripts via Worker"
 msgstr "Tillåt att script körs i bakgrunden med Worker"
 
-#: inc/settings-cacsp-tab-settings.php:201
+#: inc/settings-cacsp-tab-settings.php:129
 #| msgid "Allow blob:"
 msgid "Allow blob."
 msgstr "Tillåt blob."
 
-#: inc/settings-cacsp-tab-settings.php:213
+#: inc/settings-cacsp-tab-settings.php:141
 msgid "Allow data."
 msgstr "Tillåt data."
 
-#: inc/settings-cacsp-tab-settings.php:81
+#: inc/settings-cacsp-tab-design.php:92
 msgid "Allow user to access site without saving settings."
 msgstr ""
 "Tillåt att besökaren använder siten utan att ha sparat några inställningar."
@@ -121,7 +121,7 @@ msgstr "Backdrop"
 msgid "Backgrounds"
 msgstr "Bakgrunder"
 
-#: inc/settings-cacsp-tab-settings.php:48
+#: inc/settings-cacsp-tab-settings.php:42
 msgid "Basic settings"
 msgstr "Grundläggande inställningar"
 
@@ -139,7 +139,7 @@ msgstr ""
 msgid "Buttons"
 msgstr "Knappar"
 
-#: inc/modal-cacsp.php:145 inc/settings-cacsp-tab-texts.php:71
+#: inc/modal-cacsp.php:153 inc/settings-cacsp-tab-texts.php:71
 msgid ""
 "By sharing your interests and behavior as you visit our site, you increase "
 "the chance of seeing personalized content and offers."
@@ -147,12 +147,12 @@ msgstr ""
 "Genom att dela med dig av dina intressen och ditt beteende när du surfar "
 "ökar du chansen att få se personligt anpassat innehåll och erbjudanden."
 
-#: inc/settings-cacsp-tab-settings.php:386
-#: inc/settings-cacsp-tab-settings.php:396
+#: inc/settings-cacsp-tab-settings.php:314
+#: inc/settings-cacsp-tab-settings.php:324
 msgid "Bypass by IP"
 msgstr "Förbigå IP"
 
-#: inc/settings-cacsp-tab-settings.php:378
+#: inc/settings-cacsp-tab-settings.php:306
 msgid "Bypassing"
 msgstr "Förbikoppla"
 
@@ -167,7 +167,7 @@ msgstr ""
 "Välj hur du vill hantera domäner, texter, inställningar och färger i ditt "
 "nätverk."
 
-#: inc/modal-cacsp.php:68 inc/settings-cacsp-tab-texts.php:63
+#: inc/modal-cacsp.php:76 inc/settings-cacsp-tab-texts.php:63
 msgid ""
 "Choose what kind of cookies to accept. Your choice will be saved for one "
 "year."
@@ -184,7 +184,7 @@ msgstr ""
 "dem till dina Domäner. Detta är rekommenderade inställningar för respektive "
 "resurs."
 
-#: inc/modal-cacsp.php:24 inc/settings-cacsp-tab-texts.php:76
+#: inc/modal-cacsp.php:32 inc/settings-cacsp-tab-texts.php:76
 msgid "Close"
 msgstr "Stäng"
 
@@ -192,11 +192,11 @@ msgstr "Stäng"
 msgid "Close button"
 msgstr "Stäng-knapp"
 
-#: inc/settings-cacsp-tab-colors.php:36 inc/settings-cacsp.php:114
+#: inc/settings-cacsp-tab-colors.php:36 inc/settings-cacsp.php:117
 msgid "Colors"
 msgstr "Färger"
 
-#: inc/settings-cacsp.php:117 inc/settings-cacsp-tab-consent.php:369
+#: inc/settings-cacsp.php:120 inc/settings-cacsp-tab-consent.php:369
 msgid "Consent"
 msgstr "Samtycke"
 
@@ -212,7 +212,7 @@ msgstr "Innehållet är inte tillåtet-knapp"
 msgid "Content not allowed text"
 msgstr "Innehållet är inte tillåtet-text"
 
-#: inc/settings-cacsp-tab-settings.php:363
+#: inc/settings-cacsp-tab-settings.php:291
 msgid "Cookie Expire"
 msgstr "Cookie löper ut"
 
@@ -220,19 +220,19 @@ msgstr "Cookie löper ut"
 msgid "Cookie policy link text"
 msgstr "Cookie policy länk-text"
 
-#: inc/settings-cacsp-tab-settings.php:326
+#: inc/settings-cacsp-tab-settings.php:254
 msgid "Cookie policy page"
 msgstr "Cookie policy-sida"
 
-#: inc/settings-cacsp-tab-settings.php:348
+#: inc/settings-cacsp-tab-settings.php:276
 msgid "Cookie policy target"
 msgstr "Cookie policy länkmål"
 
-#: inc/settings-cacsp-tab-settings.php:344
+#: inc/settings-cacsp-tab-settings.php:272
 msgid "Cookie policy URL"
 msgstr "Cookie policy URL"
 
-#: inc/modal-cacsp.php:28 inc/modal-cacsp.php:65
+#: inc/modal-cacsp.php:36 inc/modal-cacsp.php:73
 #: inc/settings-cacsp-tab-texts.php:60
 msgid "Cookies"
 msgstr "Kakor"
@@ -247,11 +247,16 @@ msgstr "Cookies och Content Security Policy"
 msgid "CRM"
 msgstr "CRM"
 
+#: inc/settings-cacsp-tab-design.php:72
+#| msgid "Dark mode"
+msgid "Dark mode."
+msgstr "Mörkt läge."
+
 #: inc/settings-cacsp-tab-activate.php:24
 msgid "Deactivated"
 msgstr "Deaktiverat"
 
-#: inc/settings-cacsp-tab-settings.php:273
+#: inc/settings-cacsp-tab-settings.php:201
 msgid "Debug."
 msgstr "Debugga."
 
@@ -259,11 +264,11 @@ msgstr "Debugga."
 msgid "Default"
 msgstr "Standard"
 
-#: inc/settings-cacsp-tab-settings.php:366
+#: inc/settings-cacsp-tab-settings.php:294
 msgid "Default: 1000"
 msgstr "Standard: 1000"
 
-#: inc/settings-cacsp-tab-settings.php:363
+#: inc/settings-cacsp-tab-settings.php:291
 msgid "Default: 365"
 msgstr "Default: 365"
 
@@ -275,22 +280,26 @@ msgstr "Ta bort intervall"
 msgid "Delete selected"
 msgstr "Ta bort valda"
 
-#: inc/settings-cacsp-tab-settings.php:249
+#: inc/settings-cacsp-tab-design.php:23 inc/settings-cacsp.php:114
+msgid "Design"
+msgstr "Design"
+
+#: inc/settings-cacsp-tab-settings.php:177
 #| msgid "Disable content not allowed message"
 msgid "Disable content not allowed message."
 msgstr "Avaktivera meddelande för blockerad innehåll."
 
-#: inc/settings-cacsp-tab-settings.php:237
+#: inc/settings-cacsp-tab-settings.php:165
 #| msgid "Disable unsafe-eval"
 msgid "Disable unsafe-eval."
 msgstr "Inaktivera unsafe-eval."
 
-#: inc/settings-cacsp-tab-settings.php:225
+#: inc/settings-cacsp-tab-settings.php:153
 #| msgid "Disable unsafe-inline"
 msgid "Disable unsafe-inline."
 msgstr "Inaktivera unsafe-inline."
 
-#: inc/settings-cacsp-tab-settings.php:285
+#: inc/settings-cacsp-tab-settings.php:213
 msgid "Disable X-Content-Security-Policy."
 msgstr "Inaktivera X-Content-Security-Policy."
 
@@ -298,11 +307,11 @@ msgstr "Inaktivera X-Content-Security-Policy."
 msgid "Disabled switch"
 msgstr "Avaktiverad switch"
 
-#: inc/settings-cacsp-tab-settings.php:251
+#: inc/settings-cacsp-tab-settings.php:179
 msgid "Disables the error message that appears when an iframe is blocked."
 msgstr "Tar bort felmeddelandet som dyker upp när en ifram är blockerad."
 
-#: inc/settings-cacsp-tab-settings.php:239
+#: inc/settings-cacsp-tab-settings.php:167
 msgid ""
 "Disables the use of eval() and similar methods for creating code from "
 "strings."
@@ -310,7 +319,7 @@ msgstr ""
 "Inaktiverar användningen av eval() och liknande metoder för att skapa kod "
 "från strängar."
 
-#: inc/settings-cacsp-tab-settings.php:227
+#: inc/settings-cacsp-tab-settings.php:155
 msgid ""
 "Disables the use of inline resources, such as inline &lt;script&gt; elements,"
 " javascript: URLs, and inline event handlers."
@@ -322,15 +331,15 @@ msgstr ""
 msgid "Divi"
 msgstr "Divi"
 
-#: inc/settings-cacsp-tab-settings.php:157
+#: inc/settings-cacsp-tab-settings.php:85
 msgid "Do not include css, I've got my own style."
 msgstr "Inkluder inte css, jag har min egen stil."
 
-#: inc/settings-cacsp-tab-settings.php:167
+#: inc/settings-cacsp-tab-settings.php:95
 msgid "Do not include js, I've got my own script."
 msgstr "Inkludera inte js, jag har mitt eget script."
 
-#: inc/settings-cacsp-tab-settings.php:71
+#: inc/settings-cacsp-tab-design.php:38
 msgid "Do not use a modal, I want a banner."
 msgstr "Använd inte modal, jag vill ha en banner."
 
@@ -354,11 +363,11 @@ msgstr "Donera med PayPal"
 msgid "drop me a line"
 msgstr "hör av dig"
 
-#: inc/settings-cacsp-tab-settings.php:137
+#: inc/settings-cacsp-tab-settings.php:65
 msgid "Enable Google Consent Mode v2"
 msgstr "Aktivera Google Consent Mode v2"
 
-#: inc/settings-cacsp-tab-settings.php:307
+#: inc/settings-cacsp-tab-settings.php:235
 msgid ""
 "Enabling this will use the <a href=\"https://wpengine."
 "com/support/personalization-user-segmentation-page-cache/\" "
@@ -393,7 +402,7 @@ msgstr "Alla inställningar förutom texter kommer från din huvudwebbplats *."
 msgid "Example:"
 msgstr "Exempel:"
 
-#: inc/settings-cacsp-tab-settings.php:95
+#: inc/settings-cacsp-tab-design.php:106
 msgid ""
 "Example: If you don't have any domains specified for Marketing, that setting "
 "won't show for the visitor."
@@ -401,7 +410,7 @@ msgstr ""
 "Exempel: Om du inte har några domäner sparade för Marknadsföring, så syns "
 "inte den inställningen för användaren."
 
-#: inc/settings-cacsp-tab-settings.php:203
+#: inc/settings-cacsp-tab-settings.php:131
 msgid ""
 "Example: Some javascript libraries uses blob for images. Divi uses this for "
 "scripts in edit mode."
@@ -409,11 +418,11 @@ msgstr ""
 "Exempel: Vissa javascript-bibliotek använder blob för bilder. Divi använder "
 "detta i redigerings-läget."
 
-#: inc/settings-cacsp-tab-settings.php:215
+#: inc/settings-cacsp-tab-settings.php:143
 msgid "Example: Sometimes data is used for loading images and scripts."
 msgstr "Exempel: Ibland används data för att ladda bilder och script."
 
-#: inc/modal-cacsp.php:126 inc/settings-cacsp-tab-domains.php:86
+#: inc/modal-cacsp.php:134 inc/settings-cacsp-tab-domains.php:86
 #: inc/settings-cacsp-tab-texts.php:68
 msgid "Experience"
 msgstr "Upplevelse"
@@ -445,6 +454,14 @@ msgid ""
 msgstr ""
 "Fyll i formulären med domäner som ska vara tillåtna i varje ruta. Grupperna "
 "är:"
+
+#: inc/settings-cacsp-tab-design.php:50
+msgid "Floating banner with rounded edges and drop shadow."
+msgstr "Flytande banner med rundade hörn och skugga."
+
+#: inc/settings-cacsp-tab-design.php:48
+msgid "Floating banner."
+msgstr "Flytande banner."
 
 #: inc/settings-cacsp-tab-domains.php:68 inc/settings-cacsp-tab-domains.php:80
 #: inc/settings-cacsp-tab-domains.php:92 inc/settings-cacsp-tab-domains.php:104
@@ -504,7 +521,7 @@ msgstr "Google Tag Manager"
 msgid "Google Translate"
 msgstr "Google Translate"
 
-#: inc/settings-cacsp-tab-settings.php:105
+#: inc/settings-cacsp-tab-design.php:116
 msgid "Grandma mode."
 msgstr "Mormor-mode."
 
@@ -512,7 +529,7 @@ msgstr "Mormor-mode."
 msgid "Gravatar"
 msgstr "Gravatar"
 
-#: inc/settings-cacsp-tab-settings.php:93
+#: inc/settings-cacsp-tab-design.php:104
 msgid "Hide unused sections in Settings."
 msgstr "Dölj oanvända sektioner under Inställningar."
 
@@ -520,11 +537,11 @@ msgstr "Dölj oanvända sektioner under Inställningar."
 msgid "Hotjar"
 msgstr "Hotjar"
 
-#: inc/settings-cacsp-tab-settings.php:366
+#: inc/settings-cacsp-tab-settings.php:294
 msgid "How many ms (milliseconds) until the cookie modal should appear."
 msgstr "Hur många ms (millisekunder) tills cookiemodalen ska visas."
 
-#: inc/settings-cacsp-tab-settings.php:370
+#: inc/settings-cacsp-tab-settings.php:298
 msgid "How to link back to settings"
 msgstr "Länka till inställningarna"
 
@@ -593,7 +610,7 @@ msgstr ""
 "ditt språk, så kan du hoppa över att spara detta forumläret och allt är "
 "klart."
 
-#: inc/settings-cacsp-tab-settings.php:139
+#: inc/settings-cacsp-tab-settings.php:67
 #| msgid ""
 #| "If you enable Google Consent Mode v2, consent will be denied intil the "
 #| "visitor accepts marketing cookies. If you do not enable Google Consent "
@@ -607,7 +624,7 @@ msgstr ""
 "besökaren accepterar marknadsförings-cookies. Om du inte aktiverar Google "
 "Consent Mode v2 nekas samtycke alltid."
 
-#: inc/settings-cacsp-tab-settings.php:344
+#: inc/settings-cacsp-tab-settings.php:272
 msgid ""
 "If you use a PDF, or have your cookie policy externally, simply add the URL "
 "here. Don't forget https://"
@@ -615,7 +632,7 @@ msgstr ""
 "Om du använder en PDF, eller har din cookiepolicy externt, lägg bara till "
 "URL:en här. Glöm inte https://"
 
-#: inc/settings-cacsp-tab-settings.php:373
+#: inc/settings-cacsp-tab-settings.php:301
 msgid ""
 "If you want to link back to the settings modal simply add a link with href = "
 "\"#cookiesAndContentPolicySettings\""
@@ -631,7 +648,7 @@ msgstr ""
 "Om du inte använder någon översättningsplugin så behöver du bara spara detta "
 "formuläret om du vill ändra någon av texterna."
 
-#: inc/settings-cacsp-tab-settings.php:263
+#: inc/settings-cacsp-tab-settings.php:191
 msgid ""
 "If your host does not accept setting php header(), or if you're using static "
 "page cache that doesn't go through php, check this to add CSP as a meta tag "
@@ -645,7 +662,7 @@ msgstr ""
 msgid "Images"
 msgstr "Bilder"
 
-#: inc/modal-cacsp.php:127 inc/settings-cacsp-tab-texts.php:69
+#: inc/modal-cacsp.php:135 inc/settings-cacsp-tab-texts.php:69
 msgid ""
 "In order for our website to perform as well as possible during your visit. "
 "If you refuse these cookies, some functionality will disappear from the "
@@ -654,7 +671,7 @@ msgstr ""
 "För att vår hemsida ska prestera så bra som möjligt under ditt besök. Om du "
 "nekar de här kakorna kommer viss funktionalitet att försvinna från hemsidan."
 
-#: inc/modal-cacsp.php:109 inc/settings-cacsp-tab-texts.php:67
+#: inc/modal-cacsp.php:117 inc/settings-cacsp-tab-texts.php:67
 msgid ""
 "In order for us to improve the website's functionality and structure, based "
 "on how the website is used."
@@ -674,7 +691,7 @@ msgstr "Instagram"
 msgid "ip"
 msgstr "ip"
 
-#: inc/settings-cacsp-tab-settings.php:402
+#: inc/settings-cacsp-tab-settings.php:330
 msgid "IPs to bypass"
 msgstr "IP-adresser att förbigå"
 
@@ -694,7 +711,7 @@ msgstr "Jetpack"
 msgid "Jonk @ Follow me Darling"
 msgstr "Jonk @ Follow me Darling"
 
-#: inc/settings-cacsp-tab-settings.php:381
+#: inc/settings-cacsp-tab-settings.php:309
 msgid ""
 "Just add ?cacsp_bypass=true to your url. All cookies will be accepted for "
 "the session. Great for when you run speedtest and so forth."
@@ -711,7 +728,7 @@ msgstr "LinkedIn Insight Tag/LinkedIn Pixel"
 msgid "Mailchimp"
 msgstr "Mailchimp"
 
-#: inc/modal-cacsp.php:144 inc/settings-cacsp-tab-domains.php:98
+#: inc/modal-cacsp.php:152 inc/settings-cacsp-tab-domains.php:98
 #: inc/settings-cacsp-tab-texts.php:70
 msgid "Marketing"
 msgstr "Marknadsföring"
@@ -736,6 +753,7 @@ msgstr ""
 msgid "Media"
 msgstr "Media"
 
+#: inc/settings-cacsp-tab-design.php:81
 #: inc/settings-cacsp-tab-quickstart.php:348
 msgid "Misc"
 msgstr "Övrigt"
@@ -764,7 +782,7 @@ msgstr "Textfärg i modal"
 msgid "Modal text header color"
 msgstr "Textfärg i modalens sidhuvud"
 
-#: inc/modal-cacsp.php:90 inc/settings-cacsp-tab-texts.php:64
+#: inc/modal-cacsp.php:98 inc/settings-cacsp-tab-texts.php:64
 msgid "Necessary"
 msgstr "Nödvändiga"
 
@@ -792,15 +810,15 @@ msgstr "Textfärg för aktivt val"
 msgid "Only texts"
 msgstr "Bara texter"
 
-#: inc/settings-cacsp-tab-settings.php:59
+#: inc/settings-cacsp-tab-settings.php:53
 msgid "Only use CSP, no modal for me."
 msgstr "Använd bara CSP, ingen modal för mig, tack."
 
-#: inc/settings-cacsp-tab-settings.php:83
+#: inc/settings-cacsp-tab-design.php:94
 msgid "Only works with banner."
 msgstr "Fungerar bara med banner."
 
-#: inc/settings-cacsp-tab-settings.php:358
+#: inc/settings-cacsp-tab-settings.php:286
 msgid "Open cookie policy in a new tab."
 msgstr "Öppna cookie policy i en ny tabb."
 
@@ -832,8 +850,8 @@ msgstr "Läs under Vanliga frågor hur du översätter med Polylang."
 msgid "Read in the FAQ how to translate with WPML."
 msgstr "Läs under Vanliga frågor hur du översätter med WPML."
 
-#: inc/modal-cacsp.php:39 inc/modal-cacsp.php:43 inc/modal-cacsp.php:72
-#: inc/modal-cacsp.php:76 inc/settings-cacsp-tab-texts.php:62
+#: inc/modal-cacsp.php:47 inc/modal-cacsp.php:51 inc/modal-cacsp.php:80
+#: inc/modal-cacsp.php:84 inc/settings-cacsp-tab-texts.php:62
 msgid "Read our cookie policy"
 msgstr "Läs vår cookie policy"
 
@@ -845,12 +863,12 @@ msgstr "Läs Vanliga frågor, alla de vanligaste frågorna är besvarade där."
 msgid "reCAPTCHA v3"
 msgstr "reCAPTCHA v3"
 
-#: inc/settings-cacsp-tab-settings.php:179
-#: inc/settings-cacsp-tab-settings.php:191
+#: inc/settings-cacsp-tab-settings.php:107
+#: inc/settings-cacsp-tab-settings.php:119
 msgid "Recommended for better security."
 msgstr "Rekommenderas för bättre säkerhet."
 
-#: inc/modal-cacsp.php:55 inc/modal-cacsp.php:164
+#: inc/modal-cacsp.php:63 inc/modal-cacsp.php:172
 #: inc/settings-cacsp-tab-texts.php:73
 msgid "Refuse all"
 msgstr "Neka alla"
@@ -871,6 +889,11 @@ msgstr " Färg på neka-knapp"
 msgid "Refuse button text"
 msgstr "Färg på neka-knappens text"
 
+#: inc/settings-cacsp-tab-design.php:74
+msgid "Resaves some colors in Colors tab if checked while saving."
+msgstr ""
+"Sparar över några färger i Färg-tabben om denna är ikryssad när du sparar."
+
 #: inc/settings-cacsp-tab-texts.php:78
 msgid "Review your settings"
 msgstr "Granska dina inställningar"
@@ -883,7 +906,7 @@ msgstr "Granska dina inställningar-knapp"
 msgid "Review your settings text"
 msgstr "Granska dina inställningar-text"
 
-#: inc/modal-cacsp.php:158 inc/settings-cacsp-tab-texts.php:75
+#: inc/modal-cacsp.php:166 inc/settings-cacsp-tab-texts.php:75
 msgid "Save"
 msgstr "Spara"
 
@@ -903,12 +926,13 @@ msgstr "Färg på spara-knapp"
 msgid "Save button text"
 msgstr "Färg på spara-knappens text"
 
-#: inc/settings-cacsp-tab-settings.php:317
+#: inc/settings-cacsp-tab-settings.php:245
 msgid "Save proof of consent"
 msgstr "Spara bevis på samtycke"
 
-#: inc/settings-cacsp-tab-colors.php:225 inc/settings-cacsp-tab-domains.php:112
-#: inc/settings-cacsp-tab-settings.php:406 inc/settings-cacsp-tab-texts.php:84
+#: inc/settings-cacsp-tab-colors.php:225 inc/settings-cacsp-tab-design.php:147
+#: inc/settings-cacsp-tab-domains.php:112
+#: inc/settings-cacsp-tab-settings.php:334 inc/settings-cacsp-tab-texts.php:84
 #: inc/settings-cacsp-tab-quickstart.php:396 inc/network.php:79
 #: inc/settings-cacsp-tab-activate.php:50
 msgid "Save Settings"
@@ -931,8 +955,8 @@ msgstr ""
 "Separera domänerna med ny rad.<br>Exempel:<br>https://www.googleadservices."
 "com<br>https://www.googletagmanager.com"
 
-#: inc/modal-cacsp.php:49 inc/settings-cacsp.php:111
-#: inc/settings-cacsp-tab-settings.php:44 inc/settings-cacsp-tab-texts.php:72
+#: inc/modal-cacsp.php:57 inc/settings-cacsp.php:111
+#: inc/settings-cacsp-tab-settings.php:38 inc/settings-cacsp-tab-texts.php:72
 msgid "Settings"
 msgstr "Inställningar"
 
@@ -956,22 +980,35 @@ msgstr "Färg på inställningar-knappens text"
 msgid "Settings text"
 msgstr "Text för inställningar"
 
-#: inc/settings-cacsp-tab-settings.php:295
+#: inc/settings-cacsp-tab-settings.php:223
 #| msgid "Hide admin email in error messages."
 msgid "Show admin email in error messages."
 msgstr "Visa e-postadress för administration i felmeddelanden."
 
-#: inc/settings-cacsp-tab-settings.php:127
+#: inc/settings-cacsp-tab-design.php:138
 msgid "Show close button (&times;)."
 msgstr "Visa stäng-knapp (&times;)."
 
-#: inc/settings-cacsp-tab-settings.php:117
+#: inc/settings-cacsp-tab-design.php:128
 msgid "Show refuse cookies button."
 msgstr "Visa neka cookies-knapp."
 
 #: inc/settings-cacsp-tab-consent.php:41
 msgid "site"
 msgstr "site"
+
+#: inc/settings-cacsp-tab-design.php:27
+msgid "Size and position"
+msgstr "Storlek och position"
+
+#: inc/settings-cacsp-tab-design.php:62
+msgid ""
+"Small banner in the left bottom corner with rounded edges and drop shadow."
+msgstr "Liten banner i nedre vänstar hörnet med rundade hörn och skugga."
+
+#: inc/settings-cacsp-tab-design.php:60
+msgid "Small floating banner."
+msgstr "Liten fytande banner."
 
 #: inc/settings-cacsp-tab-quickstart.php:151
 msgid "Social networks"
@@ -985,7 +1022,7 @@ msgstr "SoundCloud"
 msgid "Spotify"
 msgstr "Spotify"
 
-#: inc/modal-cacsp.php:108 inc/settings-cacsp-tab-domains.php:74
+#: inc/modal-cacsp.php:116 inc/settings-cacsp-tab-domains.php:74
 #: inc/settings-cacsp-tab-texts.php:66
 msgid "Statistics"
 msgstr "Statistik"
@@ -1009,7 +1046,7 @@ msgstr ""
 msgid "Stripe"
 msgstr "Stripe"
 
-#: inc/settings-cacsp.php:120 inc/settings-cacsp-tab-support.php:6
+#: inc/settings-cacsp.php:123 inc/settings-cacsp-tab-support.php:6
 msgid "Support"
 msgstr "Support"
 
@@ -1028,7 +1065,7 @@ msgstr ""
 msgid "Texts"
 msgstr "Texter"
 
-#: inc/settings-cacsp-tab-settings.php:319
+#: inc/settings-cacsp-tab-settings.php:247
 msgid ""
 "The consent data is saved in the database table \"your_prefix\" + "
 "\"cacsp_consent\". By default, the prefix is \"wp_\", so in most cases the "
@@ -1042,14 +1079,14 @@ msgstr ""
 msgid "The content can't be loaded, since it is not allowed on the site."
 msgstr "Innehållet kan inte laddas eftersom det inte är tillåtet på siten."
 
-#: inc/modal-cacsp.php:91 inc/settings-cacsp-tab-texts.php:65
+#: inc/modal-cacsp.php:99 inc/settings-cacsp-tab-texts.php:65
 msgid ""
 "These cookies are not optional. They are needed for the website to function."
 msgstr ""
 "Dessa kakor går inte att välja bort. De behövs för att hemsidan över huvud "
 "taget ska fungera."
 
-#: inc/settings-cacsp-tab-settings.php:398
+#: inc/settings-cacsp-tab-settings.php:326
 msgid ""
 "This will bypass the cookie modal and accept all cookies for the specified "
 "IPs."
@@ -1057,12 +1094,12 @@ msgstr ""
 "Detta kommer att kringgå cookie-modalen och acceptera alla cookies för de "
 "angivna IP-adresserna"
 
-#: inc/settings-cacsp-tab-settings.php:61
+#: inc/settings-cacsp-tab-settings.php:55
 msgid "This will only make use of domains in Always allowed."
 msgstr ""
 "Detta innebär också att bara domäner i Tillåt alltid kommer att användas."
 
-#: inc/settings-cacsp-tab-settings.php:275
+#: inc/settings-cacsp-tab-settings.php:203
 msgid ""
 "This will print helpful comments at the beginning of your page inside the "
 "&gt;head&lt; tag."
@@ -1074,7 +1111,7 @@ msgstr ""
 msgid "time"
 msgstr "time"
 
-#: inc/settings-cacsp-tab-settings.php:366
+#: inc/settings-cacsp-tab-settings.php:294
 msgid "Timeout"
 msgstr "Paus"
 
@@ -1086,15 +1123,15 @@ msgstr "Till"
 msgid "Twitter"
 msgstr "Twitter"
 
-#: inc/settings-cacsp-tab-settings.php:177
+#: inc/settings-cacsp-tab-settings.php:105
 msgid "Use Content Security Policy for forms for added security."
 msgstr "Använd Content Security Policy till formulär för ökad säkerhet."
 
-#: inc/settings-cacsp-tab-settings.php:189
+#: inc/settings-cacsp-tab-settings.php:117
 msgid "Use Content Security Policy for worker-src."
 msgstr "Använd Content Security Policy för worker-src."
 
-#: inc/settings-cacsp-tab-settings.php:261
+#: inc/settings-cacsp-tab-settings.php:189
 msgid "Use meta."
 msgstr "Använd meta."
 
@@ -1132,7 +1169,7 @@ msgstr "Vill du supporta pluginet?"
 msgid "We are live!"
 msgstr "Det är live!"
 
-#: inc/modal-cacsp.php:31 inc/settings-cacsp-tab-texts.php:61
+#: inc/modal-cacsp.php:39 inc/settings-cacsp-tab-texts.php:61
 msgid ""
 "We serve cookies. If you think that's ok, just click \"Accept all\". You can "
 "also choose what kind of cookies you want by clicking \"Settings\"."
@@ -1145,7 +1182,7 @@ msgstr ""
 msgid "Wildcard domains can be used.<br>Example:<br>https://*.youtube.com"
 msgstr "Wildcard-domäner kan användas.<br>Exempel:<br>https://*.youtube.com"
 
-#: inc/settings-cacsp-tab-settings.php:340
+#: inc/settings-cacsp-tab-settings.php:268
 msgid ""
 "Will be linked from the cookie modal. Does not show the the cookie modal for "
 "the user to be able to read the policy before accepting."
@@ -1158,7 +1195,7 @@ msgstr ""
 msgid "Worker"
 msgstr "Worker"
 
-#: inc/settings-cacsp-tab-settings.php:305
+#: inc/settings-cacsp-tab-settings.php:233
 #| msgid "WP Engine compatibility mode"
 msgid "WP Engine compatibility mode."
 msgstr "WP Engine kompabilitets-läge."
@@ -1179,6 +1216,14 @@ msgstr ""
 "Du behöver inte fylla i det här formuläret, pluginet har redan alla färger "
 "som behövs. Men om du vill ändra några färger så gör du det här."
 
+#: inc/settings-cacsp-tab-design.php:8
+msgid ""
+"You don't have to fill out this form, the plugin comes with default design. "
+"But if you want to change the design, this is it."
+msgstr ""
+"Du behöver inte fylla i det här formuläret, pluginet har redan den design "
+"som behövs. Men om du vill ändra designen så gör du det här."
+
 #: inc/settings-cacsp-tab-settings.php:8
 msgid ""
 "You don't have to fill out this form, the plugin comes with default settings."
@@ -1188,7 +1233,7 @@ msgstr ""
 "inställningar som behövs. Men om du vill ändra några inställningar så gör du "
 "det här."
 
-#: inc/settings-cacsp.php:152
+#: inc/settings-cacsp.php:157
 msgid "You have unsaved changes, do you want to continue?"
 msgstr "Du har osparade ändringar, vill du fortsätta?"
 
@@ -1204,9 +1249,10 @@ msgstr "Din huvudwebbplats"
 #: inc/settings-cacsp-update-options.php:22
 #: inc/settings-cacsp-update-options.php:600
 #: inc/settings-cacsp-update-options.php:626
-#: inc/settings-cacsp-update-options.php:660
-#: inc/settings-cacsp-update-options.php:686
-#: inc/settings-cacsp-update-options.php:694
+#: inc/settings-cacsp-update-options.php:654
+#: inc/settings-cacsp-update-options.php:674
+#: inc/settings-cacsp-update-options.php:700
+#: inc/settings-cacsp-update-options.php:708
 msgid "Your settings are now updated"
 msgstr "Dina inställningar är nu uppdaterade"
 
