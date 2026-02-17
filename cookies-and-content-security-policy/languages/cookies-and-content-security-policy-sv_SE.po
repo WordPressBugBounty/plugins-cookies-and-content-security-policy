@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Cookies and Content Security Policy - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-01-18 14:19+0000\n"
+"PO-Revision-Date: 2026-02-16 08:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-25 07:20+0000\n"
 "Last-Translator: Testing stuff\n"
-"X-Loco-Version: 2.6.6; wp-6.4.3"
+"X-Loco-Version: 2.8.1; wp-6.9.1; php-8.1.30"
 
 #: inc/settings-cacsp-tab-settings.php:330
 msgid "127.0.0.1<br>13.37.841.01"
@@ -309,7 +309,7 @@ msgstr "Avaktiverad switch"
 
 #: inc/settings-cacsp-tab-settings.php:179
 msgid "Disables the error message that appears when an iframe is blocked."
-msgstr "Tar bort felmeddelandet som dyker upp när en ifram är blockerad."
+msgstr "Tar bort felmeddelandet som dyker upp när en iframe är blockerad."
 
 #: inc/settings-cacsp-tab-settings.php:167
 msgid ""

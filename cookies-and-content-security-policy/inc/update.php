@@ -16,6 +16,12 @@ if ( version_compare( $installed_version, '2.35', '<' ) ) {
     $needs_db_version_update = true;
 }
 
+if ( version_compare( $installed_version, '2.37', '<' ) ) {
+    update_option( 'cacsp_option_blob', true );
+	update_option( 'cacsp_option_data', true );
+    $needs_db_version_update = true;
+}
+
 if ( $needs_db_version_update ) {
     $current_version = cacsp_get_plugin_version();
     update_option( 'cacsp_db_version', $current_version, true );
