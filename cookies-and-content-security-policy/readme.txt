@@ -194,6 +194,10 @@ Yes, if you go to Settings and check "Save proof of consent". The consent data i
  
 == Changelog ==
 
+= 2.38 =
+
+* Better Google Consent Mode v2, fires on accept, not only after reload
+
 = 2.37 =
 
 * Allow data and blob by default

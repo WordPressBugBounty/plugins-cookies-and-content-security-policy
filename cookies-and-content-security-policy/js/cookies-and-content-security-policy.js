@@ -140,6 +140,7 @@ function saveCookiesAndContentPolicySettings() {
 			}
 			expires = parseInt(cacspMessages.cacspExpires);
 			Cookies.set(CACSP_COOKIE_NAME, JSON.stringify(acceptedCookies), { expires: expires, sameSite: 'Lax', secure: secure });
+			googleConsentMode();
 			if (cacspMessages.cacspOptionSaveConsent == '1') {
 				jQuery.ajax({
 					type: "POST",
@@ -353,8 +354,7 @@ function gaSetReferrer() {
 	// Send to GA once consent is given
 	if (storedRef && hasConsent) {
 		// Make sure dataLayer and gtag exist
-		window.dataLayer = window.dataLayer || [];
-		window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+		var gtag = cacspEnsureGtag();
 		// Set referrer
 		gtag('set', 'page_referrer', storedRef);
 		Cookies.remove('ga_page_referrer');
@@ -379,6 +379,7 @@ function googleConsentMode() {
 		}
 	}
 	if (cacspMessages.cacspOptionGoogleConsentMode == '1' && Cookies.get(CACSP_COOKIE_NAME)) {
+		var gtag = cacspEnsureGtag();
 		gtag('consent', 'update', {
 			'ad_storage': (hasMarketing ? 'granted' : 'denied'), 
 			'ad_user_data': (hasMarketing ? 'granted' : 'denied'), 
@@ -389,4 +390,14 @@ function googleConsentMode() {
 			'security_storage': (hasExperience ? 'granted' : 'denied'), 
 		});
 	}
+}
+
+function cacspEnsureGtag() {
+	window.dataLayer = window.dataLayer || [];
+	if (typeof window.gtag !== 'function') {
+		window.gtag = function() {
+			window.dataLayer.push(arguments);
+		};
+	}
+	return window.gtag;
 }
