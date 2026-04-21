@@ -490,6 +490,22 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 		), false );
     }
 
+	// hCaptcha
+    if ( intval( isset( $_POST['cacsp_option_quickstart_hcaptcha'] ) ) ) {
+		$cacsp_option_old = get_option( 'cacsp_option_experience_scripts' );
+		update_option( 'cacsp_option_experience_scripts', cacsp_sanitize_domains(
+			$cacsp_option_old .
+			cacsp_check_existing_domain( 'https://hcaptcha.com/', 'cacsp_option_experience_scripts' ) .
+			cacsp_check_existing_domain( 'https://*.hcaptcha.com/', 'cacsp_option_experience_scripts' )
+		), false );
+		$cacsp_option_old = get_option( 'cacsp_option_experience_frames' );
+		update_option( 'cacsp_option_experience_frames', cacsp_sanitize_domains(
+			$cacsp_option_old .
+			cacsp_check_existing_domain( 'https://hcaptcha.com/', 'cacsp_option_experience_frames' ) .
+			cacsp_check_existing_domain( 'https://*.hcaptcha.com/', 'cacsp_option_experience_frames' )
+		), false );
+    }
+
     // Gravatar
     if ( intval( isset( $_POST['cacsp_option_quickstart_gravatar'] ) ) ) {
 		$cacsp_option_old = get_option( 'cacsp_option_experience_images' );

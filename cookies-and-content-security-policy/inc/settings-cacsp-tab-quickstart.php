@@ -35,6 +35,7 @@ $cacsp_option_quickstart_twitter = intval( isset( $_POST['cacsp_option_quickstar
 $cacsp_option_quickstart_stripe = intval( isset( $_POST['cacsp_option_quickstart_stripe'] ) );
 $cacsp_option_quickstart_paypal = intval( isset( $_POST['cacsp_option_quickstart_paypal'] ) );
 $cacsp_option_quickstart_recaptcha = intval( isset( $_POST['cacsp_option_quickstart_recaptcha'] ) );
+$cacsp_option_quickstart_hcaptcha = intval( isset( $_POST['cacsp_option_quickstart_hcaptcha'] ) );
 $cacsp_option_quickstart_gravatar = intval( isset( $_POST['cacsp_option_quickstart_gravatar'] ) );
 $cacsp_option_quickstart_instagram = intval( isset( $_POST['cacsp_option_quickstart_instagram'] ) );
 $cacsp_option_quickstart_soundcloud = intval( isset( $_POST['cacsp_option_quickstart_soundcloud'] ) );
@@ -356,6 +357,17 @@ $cacsp_option_quickstart_overwrite = intval( isset( $_POST['cacsp_option_quickst
 			} ?>
 			<input type="checkbox" name="cacsp_option_quickstart_recaptcha" id="cacsp_option_quickstart_recaptcha" value="1"<?php echo $checked; ?>> 
 				<?php esc_html_e( 'reCAPTCHA v3', 'cookies-and-content-security-policy' ); ?>
+		</label>
+	</li>
+	<li>
+		<label for="cacsp_option_quickstart_hcaptcha">
+			<?php if ( $cacsp_option_quickstart_hcaptcha ) {
+				$checked = ' checked';
+			} else {
+				$checked = '';
+			} ?>
+			<input type="checkbox" name="cacsp_option_quickstart_hcaptcha" id="cacsp_option_quickstart_hcaptcha" value="1"<?php echo $checked; ?>>
+				<?php esc_html_e( 'hCaptcha', 'cookies-and-content-security-policy' ); ?>
 		</label>
 	</li>
 	<li>

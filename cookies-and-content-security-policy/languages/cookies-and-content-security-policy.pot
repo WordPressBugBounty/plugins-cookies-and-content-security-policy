@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cookies and Content Security Policy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 14:19+0000\n"
+"POT-Creation-Date: 2026-04-16 13:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -106,7 +106,7 @@ msgstr ""
 msgid "Always allowed, resources that the visitor can't opt out of."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:215
+#: inc/settings-cacsp-tab-quickstart.php:216
 msgid "Analytics"
 msgstr ""
 
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Bypassing"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:369
+#: inc/settings-cacsp-tab-quickstart.php:381
 msgid "Calendly"
 msgstr ""
 
@@ -228,7 +228,7 @@ msgstr ""
 msgid "Cookies and Content Security Policy"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:201
+#: inc/settings-cacsp-tab-quickstart.php:202
 msgid "CRM"
 msgstr ""
 
@@ -304,7 +304,7 @@ msgid ""
 " javascript: URLs, and inline event handlers."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:197
+#: inc/settings-cacsp-tab-quickstart.php:198
 msgid "Divi"
 msgstr ""
 
@@ -408,7 +408,7 @@ msgstr ""
 msgid "expires"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:172
+#: inc/settings-cacsp-tab-quickstart.php:173
 msgid "Facebook Pixel"
 msgstr ""
 
@@ -440,47 +440,47 @@ msgstr ""
 msgid "From"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:49
+#: inc/settings-cacsp-tab-quickstart.php:50
 msgid "Google"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:92
+#: inc/settings-cacsp-tab-quickstart.php:93
 msgid "Google Ads"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:103
+#: inc/settings-cacsp-tab-quickstart.php:104
 msgid "Google Ads conversions"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:114
+#: inc/settings-cacsp-tab-quickstart.php:115
 msgid "Google Ads remarketing"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:59
+#: inc/settings-cacsp-tab-quickstart.php:60
 msgid "Google Analytics"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:240
+#: inc/settings-cacsp-tab-quickstart.php:241
 msgid "Google Analytics is under \"Google\""
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:147
+#: inc/settings-cacsp-tab-quickstart.php:148
 msgid "Google Docs"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:125
+#: inc/settings-cacsp-tab-quickstart.php:126
 msgid "Google Maps"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:81
+#: inc/settings-cacsp-tab-quickstart.php:82
 msgid "Google Optimize"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:70
+#: inc/settings-cacsp-tab-quickstart.php:71
 msgid "Google Tag Manager"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:136
+#: inc/settings-cacsp-tab-quickstart.php:137
 msgid "Google Translate"
 msgstr ""
 
@@ -488,15 +488,19 @@ msgstr ""
 msgid "Grandma mode."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:308
+#: inc/settings-cacsp-tab-quickstart.php:309
 msgid "Gravatar"
+msgstr ""
+
+#: inc/settings-cacsp-tab-quickstart.php:370
+msgid "hCaptcha"
 msgstr ""
 
 #: inc/settings-cacsp-tab-design.php:104
 msgid "Hide unused sections in Settings."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:225
+#: inc/settings-cacsp-tab-quickstart.php:226
 msgid "Hotjar"
 msgstr ""
 
@@ -528,7 +532,7 @@ msgid ""
 "policy/#how%20do%20i%20translate%20in%20wpml%3F"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:211
+#: inc/settings-cacsp-tab-quickstart.php:212
 msgid "Hubspot"
 msgstr ""
 
@@ -612,7 +616,7 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:319
+#: inc/settings-cacsp-tab-quickstart.php:320
 msgid "Instagram"
 msgstr ""
 
@@ -624,7 +628,7 @@ msgstr ""
 msgid "IPs to bypass"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:286
+#: inc/settings-cacsp-tab-quickstart.php:287
 msgid "Issuu"
 msgstr ""
 
@@ -632,7 +636,7 @@ msgstr ""
 msgid "It would make my day. :)"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:236
+#: inc/settings-cacsp-tab-quickstart.php:237
 msgid "Jetpack"
 msgstr ""
 
@@ -646,11 +650,11 @@ msgid ""
 "the session. Great for when you run speedtest and so forth."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:161
+#: inc/settings-cacsp-tab-quickstart.php:162
 msgid "LinkedIn Insight Tag/LinkedIn Pixel"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:380
+#: inc/settings-cacsp-tab-quickstart.php:392
 msgid "Mailchimp"
 msgstr ""
 
@@ -673,12 +677,12 @@ msgid ""
 "etc."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:243
+#: inc/settings-cacsp-tab-quickstart.php:244
 msgid "Media"
 msgstr ""
 
 #: inc/settings-cacsp-tab-design.php:81
-#: inc/settings-cacsp-tab-quickstart.php:348
+#: inc/settings-cacsp-tab-quickstart.php:349
 msgid "Misc"
 msgstr ""
 
@@ -746,23 +750,23 @@ msgstr ""
 msgid "Open cookie policy in a new tab."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:393
+#: inc/settings-cacsp-tab-quickstart.php:405
 msgid "Overwrite all settings in Domains"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:187
+#: inc/settings-cacsp-tab-quickstart.php:188
 msgid "Page builders"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:323
+#: inc/settings-cacsp-tab-quickstart.php:324
 msgid "Payment"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:333
+#: inc/settings-cacsp-tab-quickstart.php:334
 msgid "PayPal"
 msgstr ""
 
-#: inc/settings-cacsp.php:104 inc/settings-cacsp-tab-quickstart.php:46
+#: inc/settings-cacsp.php:104 inc/settings-cacsp-tab-quickstart.php:47
 msgid "Quickstart"
 msgstr ""
 
@@ -783,7 +787,7 @@ msgstr ""
 msgid "Read the FAQ, all commonly asked questions are answered there."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:358
+#: inc/settings-cacsp-tab-quickstart.php:359
 msgid "reCAPTCHA v3"
 msgstr ""
 
@@ -856,7 +860,7 @@ msgstr ""
 #: inc/settings-cacsp-tab-colors.php:225 inc/settings-cacsp-tab-design.php:147
 #: inc/settings-cacsp-tab-domains.php:112
 #: inc/settings-cacsp-tab-settings.php:334 inc/settings-cacsp-tab-texts.php:84
-#: inc/settings-cacsp-tab-quickstart.php:396 inc/network.php:79
+#: inc/settings-cacsp-tab-quickstart.php:408 inc/network.php:79
 #: inc/settings-cacsp-tab-activate.php:50
 msgid "Save Settings"
 msgstr ""
@@ -930,15 +934,15 @@ msgstr ""
 msgid "Small floating banner."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:151
+#: inc/settings-cacsp-tab-quickstart.php:152
 msgid "Social networks"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:297
+#: inc/settings-cacsp-tab-quickstart.php:298
 msgid "SoundCloud"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:275
+#: inc/settings-cacsp-tab-quickstart.php:276
 msgid "Spotify"
 msgstr ""
 
@@ -961,7 +965,7 @@ msgid ""
 "etc."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:344
+#: inc/settings-cacsp-tab-quickstart.php:345
 msgid "Stripe"
 msgstr ""
 
@@ -1025,7 +1029,7 @@ msgstr ""
 msgid "To"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:183
+#: inc/settings-cacsp-tab-quickstart.php:184
 msgid "Twitter"
 msgstr ""
 
@@ -1052,7 +1056,7 @@ msgid ""
 "MailChimp newsletter would need https://*.list-manage.com/"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:264
+#: inc/settings-cacsp-tab-quickstart.php:265
 msgid "Vimeo"
 msgstr ""
 
@@ -1135,16 +1139,16 @@ msgid "Your main site"
 msgstr ""
 
 #: inc/settings-cacsp-update-options.php:22
-#: inc/settings-cacsp-update-options.php:600
-#: inc/settings-cacsp-update-options.php:626
-#: inc/settings-cacsp-update-options.php:654
-#: inc/settings-cacsp-update-options.php:674
-#: inc/settings-cacsp-update-options.php:700
-#: inc/settings-cacsp-update-options.php:708
+#: inc/settings-cacsp-update-options.php:616
+#: inc/settings-cacsp-update-options.php:642
+#: inc/settings-cacsp-update-options.php:670
+#: inc/settings-cacsp-update-options.php:690
+#: inc/settings-cacsp-update-options.php:716
+#: inc/settings-cacsp-update-options.php:724
 msgid "Your settings are now updated"
 msgstr ""
 
-#: inc/settings-cacsp-update-options.php:552
+#: inc/settings-cacsp-update-options.php:568
 msgid ""
 "Your settings are now updated in <a href=\"?"
 "page=cacsp_settings&tab=domains\">Domains</a>"
@@ -1156,6 +1160,6 @@ msgid ""
 "you have Experience turned off."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:253
+#: inc/settings-cacsp-tab-quickstart.php:254
 msgid "YouTube"
 msgstr ""
