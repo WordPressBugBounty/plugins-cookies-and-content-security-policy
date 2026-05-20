@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Cookies and Content Security Policy - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-16 13:20+0000\n"
+"PO-Revision-Date: 2026-04-16 20:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -156,7 +156,7 @@ msgstr "Förbigå IP"
 msgid "Bypassing"
 msgstr "Förbikoppla"
 
-#: inc/settings-cacsp-tab-quickstart.php:381
+#: inc/settings-cacsp-tab-quickstart.php:392
 msgid "Calendly"
 msgstr "Calendly"
 
@@ -529,7 +529,7 @@ msgstr "Mormor-mode."
 msgid "Gravatar"
 msgstr "Gravatar"
 
-#: inc/settings-cacsp-tab-quickstart.php:370
+#: inc/settings-cacsp-tab-quickstart.php:381
 msgid "hCaptcha"
 msgstr "hCaptcha"
 
@@ -687,7 +687,7 @@ msgstr ""
 msgid "Info"
 msgstr "Info"
 
-#: inc/settings-cacsp-tab-quickstart.php:320
+#: inc/settings-cacsp-tab-quickstart.php:331
 msgid "Instagram"
 msgstr "Instagram"
 
@@ -728,7 +728,7 @@ msgstr ""
 msgid "LinkedIn Insight Tag/LinkedIn Pixel"
 msgstr "LinkedIn Insight Tag/LinkedIn Pixel"
 
-#: inc/settings-cacsp-tab-quickstart.php:392
+#: inc/settings-cacsp-tab-quickstart.php:403
 msgid "Mailchimp"
 msgstr "Mailchimp"
 
@@ -758,7 +758,7 @@ msgid "Media"
 msgstr "Media"
 
 #: inc/settings-cacsp-tab-design.php:81
-#: inc/settings-cacsp-tab-quickstart.php:349
+#: inc/settings-cacsp-tab-quickstart.php:360
 msgid "Misc"
 msgstr "Övrigt"
 
@@ -826,7 +826,7 @@ msgstr "Fungerar bara med banner."
 msgid "Open cookie policy in a new tab."
 msgstr "Öppna cookie policy i en ny tabb."
 
-#: inc/settings-cacsp-tab-quickstart.php:405
+#: inc/settings-cacsp-tab-quickstart.php:416
 msgid "Overwrite all settings in Domains"
 msgstr "Skriv över alla inställningar i Domäner"
 
@@ -834,11 +834,11 @@ msgstr "Skriv över alla inställningar i Domäner"
 msgid "Page builders"
 msgstr "Sidbyggare"
 
-#: inc/settings-cacsp-tab-quickstart.php:324
+#: inc/settings-cacsp-tab-quickstart.php:335
 msgid "Payment"
 msgstr "Betalning"
 
-#: inc/settings-cacsp-tab-quickstart.php:334
+#: inc/settings-cacsp-tab-quickstart.php:345
 msgid "PayPal"
 msgstr "PayPal"
 
@@ -863,7 +863,7 @@ msgstr "Läs vår cookie policy"
 msgid "Read the FAQ, all commonly asked questions are answered there."
 msgstr "Läs Vanliga frågor, alla de vanligaste frågorna är besvarade där."
 
-#: inc/settings-cacsp-tab-quickstart.php:359
+#: inc/settings-cacsp-tab-quickstart.php:370
 msgid "reCAPTCHA v3"
 msgstr "reCAPTCHA v3"
 
@@ -937,7 +937,7 @@ msgstr "Spara bevis på samtycke"
 #: inc/settings-cacsp-tab-colors.php:225 inc/settings-cacsp-tab-design.php:147
 #: inc/settings-cacsp-tab-domains.php:112
 #: inc/settings-cacsp-tab-settings.php:334 inc/settings-cacsp-tab-texts.php:84
-#: inc/settings-cacsp-tab-quickstart.php:408 inc/network.php:79
+#: inc/settings-cacsp-tab-quickstart.php:419 inc/network.php:79
 #: inc/settings-cacsp-tab-activate.php:50
 msgid "Save Settings"
 msgstr "Spara inställningar"
@@ -1046,7 +1046,7 @@ msgid ""
 msgstr ""
 "Statistik, resurser för att samla in data om besökaren för statistik etc."
 
-#: inc/settings-cacsp-tab-quickstart.php:345
+#: inc/settings-cacsp-tab-quickstart.php:356
 msgid "Stripe"
 msgstr "Stripe"
 
@@ -1124,8 +1124,8 @@ msgid "To"
 msgstr "Till"
 
 #: inc/settings-cacsp-tab-quickstart.php:184
-msgid "Twitter"
-msgstr "Twitter"
+msgid "Twitter / X"
+msgstr "Twitter / X"
 
 #: inc/settings-cacsp-tab-settings.php:105
 msgid "Use Content Security Policy for forms for added security."
@@ -1194,6 +1194,10 @@ msgstr ""
 "Länkas till i cookie-modalen. Visar inte cookie-modalen så att användaren "
 "kan läsa policyn innan denne accepterar."
 
+#: inc/settings-cacsp-tab-quickstart.php:320
+msgid "WordPress CDN"
+msgstr "WordPress CDN"
+
 #: inc/settings-cacsp-tab-domains.php:71 inc/settings-cacsp-tab-domains.php:83
 #: inc/settings-cacsp-tab-domains.php:95 inc/settings-cacsp-tab-domains.php:107
 msgid "Worker"
@@ -1251,16 +1255,16 @@ msgid "Your main site"
 msgstr "Din huvudwebbplats"
 
 #: inc/settings-cacsp-update-options.php:22
-#: inc/settings-cacsp-update-options.php:616
-#: inc/settings-cacsp-update-options.php:642
-#: inc/settings-cacsp-update-options.php:670
-#: inc/settings-cacsp-update-options.php:690
-#: inc/settings-cacsp-update-options.php:716
-#: inc/settings-cacsp-update-options.php:724
+#: inc/settings-cacsp-update-options.php:625
+#: inc/settings-cacsp-update-options.php:651
+#: inc/settings-cacsp-update-options.php:679
+#: inc/settings-cacsp-update-options.php:699
+#: inc/settings-cacsp-update-options.php:725
+#: inc/settings-cacsp-update-options.php:733
 msgid "Your settings are now updated"
 msgstr "Dina inställningar är nu uppdaterade"
 
-#: inc/settings-cacsp-update-options.php:568
+#: inc/settings-cacsp-update-options.php:577
 msgid ""
 "Your settings are now updated in <a href=\"?"
 "page=cacsp_settings&tab=domains\">Domains</a>"

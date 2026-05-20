@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cookies and Content Security Policy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-16 13:20+0000\n"
+"POT-Creation-Date: 2026-04-16 20:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Bypassing"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:381
+#: inc/settings-cacsp-tab-quickstart.php:392
 msgid "Calendly"
 msgstr ""
 
@@ -492,7 +492,7 @@ msgstr ""
 msgid "Gravatar"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:370
+#: inc/settings-cacsp-tab-quickstart.php:381
 msgid "hCaptcha"
 msgstr ""
 
@@ -616,7 +616,7 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:320
+#: inc/settings-cacsp-tab-quickstart.php:331
 msgid "Instagram"
 msgstr ""
 
@@ -654,7 +654,7 @@ msgstr ""
 msgid "LinkedIn Insight Tag/LinkedIn Pixel"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:392
+#: inc/settings-cacsp-tab-quickstart.php:403
 msgid "Mailchimp"
 msgstr ""
 
@@ -682,7 +682,7 @@ msgid "Media"
 msgstr ""
 
 #: inc/settings-cacsp-tab-design.php:81
-#: inc/settings-cacsp-tab-quickstart.php:349
+#: inc/settings-cacsp-tab-quickstart.php:360
 msgid "Misc"
 msgstr ""
 
@@ -750,7 +750,7 @@ msgstr ""
 msgid "Open cookie policy in a new tab."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:405
+#: inc/settings-cacsp-tab-quickstart.php:416
 msgid "Overwrite all settings in Domains"
 msgstr ""
 
@@ -758,11 +758,11 @@ msgstr ""
 msgid "Page builders"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:324
+#: inc/settings-cacsp-tab-quickstart.php:335
 msgid "Payment"
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:334
+#: inc/settings-cacsp-tab-quickstart.php:345
 msgid "PayPal"
 msgstr ""
 
@@ -787,7 +787,7 @@ msgstr ""
 msgid "Read the FAQ, all commonly asked questions are answered there."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:359
+#: inc/settings-cacsp-tab-quickstart.php:370
 msgid "reCAPTCHA v3"
 msgstr ""
 
@@ -860,7 +860,7 @@ msgstr ""
 #: inc/settings-cacsp-tab-colors.php:225 inc/settings-cacsp-tab-design.php:147
 #: inc/settings-cacsp-tab-domains.php:112
 #: inc/settings-cacsp-tab-settings.php:334 inc/settings-cacsp-tab-texts.php:84
-#: inc/settings-cacsp-tab-quickstart.php:408 inc/network.php:79
+#: inc/settings-cacsp-tab-quickstart.php:419 inc/network.php:79
 #: inc/settings-cacsp-tab-activate.php:50
 msgid "Save Settings"
 msgstr ""
@@ -965,7 +965,7 @@ msgid ""
 "etc."
 msgstr ""
 
-#: inc/settings-cacsp-tab-quickstart.php:345
+#: inc/settings-cacsp-tab-quickstart.php:356
 msgid "Stripe"
 msgstr ""
 
@@ -1030,7 +1030,7 @@ msgid "To"
 msgstr ""
 
 #: inc/settings-cacsp-tab-quickstart.php:184
-msgid "Twitter"
+msgid "Twitter / X"
 msgstr ""
 
 #: inc/settings-cacsp-tab-settings.php:105
@@ -1092,6 +1092,10 @@ msgid ""
 "the user to be able to read the policy before accepting."
 msgstr ""
 
+#: inc/settings-cacsp-tab-quickstart.php:320
+msgid "WordPress CDN"
+msgstr ""
+
 #: inc/settings-cacsp-tab-domains.php:71 inc/settings-cacsp-tab-domains.php:83
 #: inc/settings-cacsp-tab-domains.php:95 inc/settings-cacsp-tab-domains.php:107
 msgid "Worker"
@@ -1139,16 +1143,16 @@ msgid "Your main site"
 msgstr ""
 
 #: inc/settings-cacsp-update-options.php:22
-#: inc/settings-cacsp-update-options.php:616
-#: inc/settings-cacsp-update-options.php:642
-#: inc/settings-cacsp-update-options.php:670
-#: inc/settings-cacsp-update-options.php:690
-#: inc/settings-cacsp-update-options.php:716
-#: inc/settings-cacsp-update-options.php:724
+#: inc/settings-cacsp-update-options.php:625
+#: inc/settings-cacsp-update-options.php:651
+#: inc/settings-cacsp-update-options.php:679
+#: inc/settings-cacsp-update-options.php:699
+#: inc/settings-cacsp-update-options.php:725
+#: inc/settings-cacsp-update-options.php:733
 msgid "Your settings are now updated"
 msgstr ""
 
-#: inc/settings-cacsp-update-options.php:568
+#: inc/settings-cacsp-update-options.php:577
 msgid ""
 "Your settings are now updated in <a href=\"?"
 "page=cacsp_settings&tab=domains\">Domains</a>"

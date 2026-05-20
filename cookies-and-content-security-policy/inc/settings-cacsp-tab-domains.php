@@ -49,14 +49,14 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 		$cacsp_option_experience_worker = get_cacsp_options( 'cacsp_option_experience_worker', false, '', true );
 	}
 	// Marketing
-	$cacsp_option_markerting_scripts = get_cacsp_options( 'cacsp_option_markerting_scripts', false, '', true );
-	$cacsp_option_markerting_images = get_cacsp_options( 'cacsp_option_markerting_images', false, '', true );
-	$cacsp_option_markerting_frames = get_cacsp_options( 'cacsp_option_markerting_frames', false, '', true );
+	$cacsp_option_marketing_scripts = get_cacsp_options( 'cacsp_option_marketing_scripts', false, '', true );
+	$cacsp_option_marketing_images = get_cacsp_options( 'cacsp_option_marketing_images', false, '', true );
+	$cacsp_option_marketing_frames = get_cacsp_options( 'cacsp_option_marketing_frames', false, '', true );
 	if ( $cacsp_option_forms ) {
-		$cacsp_option_markerting_forms = get_cacsp_options( 'cacsp_option_markerting_forms', false, '', true );
+		$cacsp_option_marketing_forms = get_cacsp_options( 'cacsp_option_marketing_forms', false, '', true );
 	}
 	if ( $cacsp_option_worker ) {
-		$cacsp_option_markerting_worker = get_cacsp_options( 'cacsp_option_markerting_worker', false, '', true );
+		$cacsp_option_marketing_worker = get_cacsp_options( 'cacsp_option_marketing_worker', false, '', true );
 	}
 	?>
 <h2><?php esc_html_e( 'Always allow', 'cookies-and-content-security-policy' ); ?></h2>
@@ -97,14 +97,14 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 </table>
 <h2><?php esc_html_e( 'Marketing', 'cookies-and-content-security-policy' ); ?></h2>
 <table class="form-table">
-	<?php echo cacsp_settings_textarea_row( __('Scripts', 'cookies-and-content-security-policy' ), 'cacsp_option_markerting_scripts', $cacsp_option_markerting_scripts, true, 'https://*.facebook.net/<br>https://tagmanager.google.com/<br>https://www.googletagmanager.com/<br>https://www.googleadservices.com/' ); ?>
-	<?php echo cacsp_settings_textarea_row( __('Images', 'cookies-and-content-security-policy' ), 'cacsp_option_markerting_images', $cacsp_option_markerting_images, true, 'https://*.facebook.net/<br>https://*.facebook.com/<br>https://*.google.com/<br>https://*.google.se/<br>https://*.linkedin.com/' ); ?>
-	<?php echo cacsp_settings_textarea_row( __('Frames', 'cookies-and-content-security-policy' ), 'cacsp_option_markerting_frames', $cacsp_option_markerting_frames, true, __('No idea :)', 'cookies-and-content-security-policy' ) ); ?>
+	<?php echo cacsp_settings_textarea_row( __('Scripts', 'cookies-and-content-security-policy' ), 'cacsp_option_marketing_scripts', $cacsp_option_marketing_scripts, true, 'https://*.facebook.net/<br>https://tagmanager.google.com/<br>https://www.googletagmanager.com/<br>https://www.googleadservices.com/' ); ?>
+	<?php echo cacsp_settings_textarea_row( __('Images', 'cookies-and-content-security-policy' ), 'cacsp_option_marketing_images', $cacsp_option_marketing_images, true, 'https://*.facebook.net/<br>https://*.facebook.com/<br>https://*.google.com/<br>https://*.google.se/<br>https://*.linkedin.com/' ); ?>
+	<?php echo cacsp_settings_textarea_row( __('Frames', 'cookies-and-content-security-policy' ), 'cacsp_option_marketing_frames', $cacsp_option_marketing_frames, true, __('No idea :)', 'cookies-and-content-security-policy' ) ); ?>
 	<?php if ( $cacsp_option_forms ) {
-		echo cacsp_settings_textarea_row( __('Forms', 'cookies-and-content-security-policy' ), 'cacsp_option_markerting_forms', $cacsp_option_markerting_forms, true, __('Use this to allow posting data to other sites, like subscribing to a MailChimp newsletter would need https://*.list-manage.com/', 'cookies-and-content-security-policy' ) );
+		echo cacsp_settings_textarea_row( __('Forms', 'cookies-and-content-security-policy' ), 'cacsp_option_marketing_forms', $cacsp_option_marketing_forms, true, __('Use this to allow posting data to other sites, like subscribing to a MailChimp newsletter would need https://*.list-manage.com/', 'cookies-and-content-security-policy' ) );
 	} ?>
 	<?php if ( $cacsp_option_worker ) {
-		echo cacsp_settings_textarea_row( __('Worker', 'cookies-and-content-security-policy' ), 'cacsp_option_markerting_worker', $cacsp_option_markerting_worker, true, __('Allow background scripts via Worker', 'cookies-and-content-security-policy' ) );
+		echo cacsp_settings_textarea_row( __('Worker', 'cookies-and-content-security-policy' ), 'cacsp_option_marketing_worker', $cacsp_option_marketing_worker, true, __('Allow background scripts via Worker', 'cookies-and-content-security-policy' ) );
 	} ?>
 </table>
 

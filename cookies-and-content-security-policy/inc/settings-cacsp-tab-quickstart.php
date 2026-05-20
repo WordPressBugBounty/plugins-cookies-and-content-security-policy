@@ -181,7 +181,7 @@ $cacsp_option_quickstart_overwrite = intval( isset( $_POST['cacsp_option_quickst
 				$checked = '';
 			} ?>
 			<input type="checkbox" name="cacsp_option_quickstart_twitter" id="cacsp_option_quickstart_twitter" value="1"<?php echo $checked; ?>> 
-				<?php esc_html_e( 'Twitter', 'cookies-and-content-security-policy' ); ?>
+				<?php esc_html_e( 'Twitter / X', 'cookies-and-content-security-policy' ); ?>
 		</label>
 	</li>
 	<li>
@@ -307,6 +307,17 @@ $cacsp_option_quickstart_overwrite = intval( isset( $_POST['cacsp_option_quickst
 			} ?>
 			<input type="checkbox" name="cacsp_option_quickstart_gravatar" id="cacsp_option_quickstart_gravatar" value="1"<?php echo $checked; ?>> 
 				<?php esc_html_e( 'Gravatar', 'cookies-and-content-security-policy' ); ?>
+		</label>
+	</li>
+	<li>
+		<label for="cacsp_option_quickstart_wp_cdn">
+			<?php if ( $cacsp_option_quickstart_wp_cdn ) {
+				$checked = ' checked';
+			} else {
+				$checked = '';
+			} ?>
+			<input type="checkbox" name="cacsp_option_quickstart_wp_cdn" id="cacsp_option_quickstart_wp_cdn" value="1"<?php echo $checked; ?>> 
+				<?php esc_html_e( 'WordPress CDN', 'cookies-and-content-security-policy' ); ?>
 		</label>
 	</li>
 	<li>

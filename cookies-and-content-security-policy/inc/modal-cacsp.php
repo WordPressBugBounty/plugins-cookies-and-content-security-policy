@@ -143,12 +143,12 @@ if ( !get_cacsp_options( 'cacsp_option_only_csp' ) && !is_admin() ) {
 							</li>
 							<?php
 							$li_style = '';
-							if ( $cacsp_option_hide_unused_settings_row && !get_cacsp_options( 'cacsp_option_markerting_scripts', true ) && !get_cacsp_options( 'cacsp_option_markerting_images', true ) && !get_cacsp_options( 'cacsp_option_markerting_frames', true ) && !get_cacsp_options( 'cacsp_option_markerting_forms', true ) ) {
+							if ( $cacsp_option_hide_unused_settings_row && !get_cacsp_options( 'cacsp_option_marketing_scripts', true ) && !get_cacsp_options( 'cacsp_option_marketing_images', true ) && !get_cacsp_options( 'cacsp_option_marketing_frames', true ) && !get_cacsp_options( 'cacsp_option_marketing_forms', true ) ) {
 									$li_style = ' style="display: none;"';
 							}
 							?>
 							<li<?php echo $li_style; ?>>
-								<a href="#markerting" class="modal-cacsp-toggle-switch" data-accepted-cookie="markerting">
+								<a href="#marketing" class="modal-cacsp-toggle-switch" data-accepted-cookie="marketing">
 									<span><?php echo get_cacsp_options( 'cacsp_option_text_marketing_header', false, __( 'Marketing', 'cookies-and-content-security-policy' ) ); ?><br>
 										<span><?php echo get_cacsp_options( 'cacsp_option_text_marketing_description', false, __( 'By sharing your interests and behavior as you visit our site, you increase the chance of seeing personalized content and offers.', 'cookies-and-content-security-policy' ) ); ?></span>
 									</span>

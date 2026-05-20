@@ -1,6 +1,21 @@
 <?php
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
+function cacsp_normalize_cookie_filter_value( $cookie_filter, $expires = null ) {
+	if ( ! is_string( $cookie_filter ) || strpos( $cookie_filter, 'markerting' ) === false ) {
+		return $cookie_filter;
+	}
+
+	$normalized_cookie_filter = str_replace( 'markerting', 'marketing', $cookie_filter );
+
+	if ( null !== $expires ) {
+		setcookie( 'cookies_and_content_security_policy', $normalized_cookie_filter, $expires, COOKIEPATH ?: '/', COOKIE_DOMAIN, is_ssl(), false );
+		$_COOKIE['cookies_and_content_security_policy'] = $normalized_cookie_filter;
+	}
+
+	return $normalized_cookie_filter;
+}
+
 // Set Content Security Policy
 function set_content_security_policy() {
 	$contentSecurityPolicyScript = '';
@@ -37,7 +52,7 @@ function set_content_security_policy() {
 	// end ip check for bypass
 	if ( isset( $_GET["cacsp_bypass"] ) || $cacsp_bypass_ip === 'true' ) {
 		$cacsp_bypass = 'true';
-		$cacsp_bypass_cookie_value = '["statistics","experience","markerting"]';
+		$cacsp_bypass_cookie_value = '["statistics","experience","marketing"]';
 		$cacsp_option_debug_text .= '<!-- We are bypassing and accepting all -->' . "\n";
 		setcookie( 'cookies_and_content_security_policy', $cacsp_bypass_cookie_value );
 	}
@@ -57,6 +72,9 @@ function set_content_security_policy() {
 				}
 			} else {
 				$cookie_filter = str_replace( '\\', '', $_COOKIE['cookies_and_content_security_policy'] );
+				$cookie_expire_days = absint( get_cacsp_options( 'cacsp_option_settings_expire', false, 365 ) );
+				$cookie_expire_time = time() + ( $cookie_expire_days * DAY_IN_SECONDS );
+				$cookie_filter = cacsp_normalize_cookie_filter_value( $cookie_filter, $cookie_expire_time );
 			}
 		}
 		if ( $cookie_filter ) {
@@ -96,18 +114,18 @@ function set_content_security_policy() {
 						if ( $cacsp_option_worker ) {
 							$contentSecurityPolicyWorker .= ' ' . get_cacsp_options( 'cacsp_option_experience_worker', true );
 						}
-					} else if ( $value == 'markerting' ) {
+					} else if ( $value == 'marketing' ) {
 						if ( $cacsp_option_debug ) {
-							$cacsp_option_debug_text .= '<!-- We have markerting in the Content Security Policy Cookie -->' . "\n";
+							$cacsp_option_debug_text .= '<!-- We have marketing in the Content Security Policy Cookie -->' . "\n";
 						}
-						$contentSecurityPolicyScript .= ' ' . get_cacsp_options( 'cacsp_option_markerting_scripts', true );
-						$contentSecurityPolicyImg .= ' ' . get_cacsp_options( 'cacsp_option_markerting_images', true );
-						$contentSecurityPolicyFrame .= ' ' . get_cacsp_options( 'cacsp_option_markerting_frames', true );
+						$contentSecurityPolicyScript .= ' ' . get_cacsp_options( 'cacsp_option_marketing_scripts', true );
+						$contentSecurityPolicyImg .= ' ' . get_cacsp_options( 'cacsp_option_marketing_images', true );
+						$contentSecurityPolicyFrame .= ' ' . get_cacsp_options( 'cacsp_option_marketing_frames', true );
 						if ( $cacsp_option_forms ) {
-							$contentSecurityPolicyForm .= ' ' . get_cacsp_options( 'cacsp_option_markerting_forms', true );
+							$contentSecurityPolicyForm .= ' ' . get_cacsp_options( 'cacsp_option_marketing_forms', true );
 						}
 						if ( $cacsp_option_worker ) {
-							$contentSecurityPolicyWorker .= ' ' . get_cacsp_options( 'cacsp_option_markerting_worker', true );
+							$contentSecurityPolicyWorker .= ' ' . get_cacsp_options( 'cacsp_option_marketing_worker', true );
 						}
 					}
 				}

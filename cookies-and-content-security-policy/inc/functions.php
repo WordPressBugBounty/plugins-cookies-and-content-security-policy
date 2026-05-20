@@ -3,11 +3,12 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 function get_cacsp_options( $option, $new_line_to_space = false, $fallback = '', $esc = false ) {
 
+	$option_name = $option;
 	$cacsp_option_use = false;
 	if ( is_multisite() ) {
 		$cacsp_site_id = get_main_site_id();
 		$cacsp_option_use = get_blog_option( $cacsp_site_id, 'cacsp_option_use' );
-		if ( $cacsp_option_use == 'some' && ( strpos( $option, 'cacsp_option_text_' ) > -1 || strpos( $option, '_button' ) > -1 || strpos( $option, '_description' ) > -1 ) ) {
+		if ( $cacsp_option_use == 'some' && ( strpos( $option_name, 'cacsp_option_text_' ) > -1 || strpos( $option_name, '_button' ) > -1 || strpos( $option_name, '_description' ) > -1 ) ) {
 			$cacsp_site_id = get_current_blog_id();
 		}
 	}
@@ -16,9 +17,21 @@ function get_cacsp_options( $option, $new_line_to_space = false, $fallback = '',
 	}
 	
 	if ( is_multisite() && $cacsp_option_use != 'default' ) {
-		$option = get_blog_option( $cacsp_site_id, $option );
+		$option = get_blog_option( $cacsp_site_id, $option_name );
 	} else {
-		$option = get_option( $option );
+		$option = get_option( $option_name );
+	}
+
+	if ( !$option && strpos( $option_name, 'cacsp_option_marketing_' ) === 0 ) {
+		// TODO: Remove after 2.40
+		$legacy_option_name = str_replace( 'cacsp_option_marketing_', 'cacsp_option_markerting_', $option_name, $count );
+		if ( $count === 1 ) {
+			if ( is_multisite() && $cacsp_option_use != 'default' ) {
+				$option = get_blog_option( $cacsp_site_id, $legacy_option_name );
+			} else {
+				$option = get_option( $legacy_option_name );
+			}
+		}
 	}
 
 	if ( !$option && strlen( $fallback ) > 0 ) {
@@ -132,7 +145,7 @@ function cacsp_save_error_message_js( $blog_id = null, $check_exists = false ) {
 	$js .= 'var cacspexperience = "' . get_cacsp_options( 'cacsp_option_experience_frames', true ) . '";';
 	$js .= "\n";
 	// Marketing
-	$js .= 'var cacspmarkerting = "' . get_cacsp_options( 'cacsp_option_markerting_frames', true ) . '";';
+	$js .= 'var cacspmarketing = "' . get_cacsp_options( 'cacsp_option_marketing_frames', true ) . '";';
 	$js .= "\n";
 
 	$js .= "if (Cookies.get(CACSP_COOKIE_NAME)) {

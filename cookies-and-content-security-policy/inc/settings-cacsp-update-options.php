@@ -42,11 +42,11 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 		update_option( 'cacsp_option_experience_frames', '' );
 		update_option( 'cacsp_option_experience_form', '' );
 		update_option( 'cacsp_option_experience_worker', '' );
-		update_option( 'cacsp_option_markerting_scripts', '' );
-		update_option( 'cacsp_option_markerting_images', '' );
-		update_option( 'cacsp_option_markerting_frames', '' );
-		update_option( 'cacsp_option_markerting_forms', '' );
-		update_option( 'cacsp_option_markerting_worker', '' );
+		update_option( 'cacsp_option_marketing_scripts', '' );
+		update_option( 'cacsp_option_marketing_images', '' );
+		update_option( 'cacsp_option_marketing_frames', '' );
+		update_option( 'cacsp_option_marketing_forms', '' );
+		update_option( 'cacsp_option_marketing_worker', '' );
 	}
 
 	// Google Analytics
@@ -69,137 +69,137 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 
     // Google Tag Manager
     if ( intval( isset( $_POST['cacsp_option_quickstart_google_tag_manager'] ) ) ) {
-    	$cacsp_option_old = get_option( 'cacsp_option_markerting_scripts' );
-		update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( 
+    	$cacsp_option_old = get_option( 'cacsp_option_marketing_scripts' );
+		update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://googletagmanager.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://*.googletagmanager.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://tagmanager.google.com/', 'cacsp_option_markerting_scripts' ) 
+			cacsp_check_existing_domain( 'https://googletagmanager.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://*.googletagmanager.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://tagmanager.google.com/', 'cacsp_option_marketing_scripts' ) 
 
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_images' );
-		update_option( 'cacsp_option_markerting_images', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_images' );
+		update_option( 'cacsp_option_marketing_images', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://googletagmanager.com/', 'cacsp_option_markerting_images' ) . 
-			cacsp_check_existing_domain( 'https://*.googletagmanager.com/', 'cacsp_option_markerting_images' ) . 
-			cacsp_check_existing_domain( 'https://gstatic.com/', 'cacsp_option_markerting_images' ) . 
-			cacsp_check_existing_domain( 'https://*.gstatic.com/', 'cacsp_option_markerting_images' ) 
+			cacsp_check_existing_domain( 'https://googletagmanager.com/', 'cacsp_option_marketing_images' ) . 
+			cacsp_check_existing_domain( 'https://*.googletagmanager.com/', 'cacsp_option_marketing_images' ) . 
+			cacsp_check_existing_domain( 'https://gstatic.com/', 'cacsp_option_marketing_images' ) . 
+			cacsp_check_existing_domain( 'https://*.gstatic.com/', 'cacsp_option_marketing_images' ) 
 		), false );
     }
 
     // Google Optimize
     if ( intval( isset( $_POST['cacsp_option_quickstart_google_optimize'] ) ) && !intval( isset( $_POST['cacsp_option_quickstart_google_analytics'] ) ) ) {
-    	$cacsp_option_old = get_option( 'cacsp_option_markerting_scripts' );
-		update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( 
+    	$cacsp_option_old = get_option( 'cacsp_option_marketing_scripts' );
+		update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://googleoptimize.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://*.googleoptimize.com/', 'cacsp_option_markerting_scripts' ) 
+			cacsp_check_existing_domain( 'https://googleoptimize.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://*.googleoptimize.com/', 'cacsp_option_marketing_scripts' ) 
 		), false );
     }
 
 	// Google ads
 	if ( intval( isset( $_POST['cacsp_option_quickstart_google_ads'] ) ) ) {
-    	$cacsp_option_old = get_option( 'cacsp_option_markerting_scripts' );
-		update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( 
+    	$cacsp_option_old = get_option( 'cacsp_option_marketing_scripts' );
+		update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
 			cacsp_check_existing_domain( 'https://*.googlesyndication.com/', 'cacsp_option_statistics_scripts' ) . 
-			cacsp_check_existing_domain( 'https://partner.googleadservices.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.ca/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.co.in/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.co.kr/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.co.uk/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.co.za/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.ar/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.au/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.br/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.co/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.gt/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.mx/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.pe/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.ph/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.pk/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.tr/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.tw/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.com.vn/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.de/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.dk/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.es/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.fr/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.nl/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.no/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.ru/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://adservice.google.vg/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://www.google.com/', 'cacsp_option_markerting_scripts' ) 
+			cacsp_check_existing_domain( 'https://partner.googleadservices.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.ca/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.co.in/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.co.kr/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.co.uk/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.co.za/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.ar/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.au/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.br/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.co/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.gt/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.mx/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.pe/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.ph/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.pk/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.tr/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.tw/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.com.vn/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.de/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.dk/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.es/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.fr/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.nl/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.no/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.ru/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://adservice.google.vg/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://www.google.com/', 'cacsp_option_marketing_scripts' ) 
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_images' );
-		update_option( 'cacsp_option_markerting_images', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_images' );
+		update_option( 'cacsp_option_marketing_images', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://*.googlesyndication.com/', 'cacsp_option_markerting_images' )
+			cacsp_check_existing_domain( 'https://*.googlesyndication.com/', 'cacsp_option_marketing_images' )
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_frames' );
-		update_option( 'cacsp_option_markerting_frames', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_frames' );
+		update_option( 'cacsp_option_marketing_frames', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://googleads.g.doubleclick.net/', 'cacsp_option_markerting_frames' ) . 
-			cacsp_check_existing_domain( 'https://tpc.googlesyndication.com/', 'cacsp_option_markerting_frames' ) 
+			cacsp_check_existing_domain( 'https://googleads.g.doubleclick.net/', 'cacsp_option_marketing_frames' ) . 
+			cacsp_check_existing_domain( 'https://tpc.googlesyndication.com/', 'cacsp_option_marketing_frames' ) 
 		), false );
     }
 
     // Google Ads conversions
     if ( intval( isset( $_POST['cacsp_option_quickstart_google_ads_conversion'] ) ) ) {
-    	$cacsp_option_old = get_option( 'cacsp_option_markerting_scripts' );
-		update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( 
+    	$cacsp_option_old = get_option( 'cacsp_option_marketing_scripts' );
+		update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
 			cacsp_check_existing_domain( 'https://google-analytics.com/', 'cacsp_option_statistics_scripts' ) . 
 			cacsp_check_existing_domain( 'https://*.google-analytics.com/', 'cacsp_option_statistics_scripts' ) . 
-			cacsp_check_existing_domain( 'https://google.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://*.google.com/', 'cacsp_option_markerting_scripts' )
+			cacsp_check_existing_domain( 'https://google.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://*.google.com/', 'cacsp_option_marketing_scripts' )
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_images' );
-		update_option( 'cacsp_option_markerting_images', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_images' );
+		update_option( 'cacsp_option_marketing_images', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://googleads.g.doubleclick.net/', 'cacsp_option_markerting_images' ) . 
-			cacsp_check_existing_domain( 'https://google.com/', 'cacsp_option_markerting_images' ) . 
-			cacsp_check_existing_domain( 'https://*.google.com/', 'cacsp_option_markerting_images' )
+			cacsp_check_existing_domain( 'https://googleads.g.doubleclick.net/', 'cacsp_option_marketing_images' ) . 
+			cacsp_check_existing_domain( 'https://google.com/', 'cacsp_option_marketing_images' ) . 
+			cacsp_check_existing_domain( 'https://*.google.com/', 'cacsp_option_marketing_images' )
 		), false );
     }
 
     // Google Ads remarketing
     if ( intval( isset( $_POST['cacsp_option_quickstart_google_ads_remarketing'] ) ) ) {
-    	$cacsp_option_old = get_option( 'cacsp_option_markerting_scripts' );
-		update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( 
+    	$cacsp_option_old = get_option( 'cacsp_option_marketing_scripts' );
+		update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://googleadservices.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://*.googleadservices.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://googleads.g.doubleclick.net/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://google.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://*.google.com/', 'cacsp_option_markerting_scripts' )
+			cacsp_check_existing_domain( 'https://googleadservices.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://*.googleadservices.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://googleads.g.doubleclick.net/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://google.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://*.google.com/', 'cacsp_option_marketing_scripts' )
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_images' );
-		update_option( 'cacsp_option_markerting_images', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_images' );
+		update_option( 'cacsp_option_marketing_images', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://google.com/', 'cacsp_option_markerting_images' ) . 
-			cacsp_check_existing_domain( 'https://*.google.com/', 'cacsp_option_markerting_images' ) 
+			cacsp_check_existing_domain( 'https://google.com/', 'cacsp_option_marketing_images' ) . 
+			cacsp_check_existing_domain( 'https://*.google.com/', 'cacsp_option_marketing_images' ) 
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_frames' );
-		update_option( 'cacsp_option_markerting_frames', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_frames' );
+		update_option( 'cacsp_option_marketing_frames', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://*.doubleclick.net/', 'cacsp_option_markerting_frames' ) 
+			cacsp_check_existing_domain( 'https://*.doubleclick.net/', 'cacsp_option_marketing_frames' ) 
 		), false );
     }
 
     // LinkedIn Insight Tag/LinkedIn Pixel
     if ( intval( isset( $_POST['cacsp_option_quickstart_linkedin_insight_tag'] ) ) ) {
-    	$cacsp_option_old = get_option( 'cacsp_option_markerting_scripts' );
-		update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( 
+    	$cacsp_option_old = get_option( 'cacsp_option_marketing_scripts' );
+		update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://snap.licdn.com/', 'cacsp_option_markerting_scripts' ) 
+			cacsp_check_existing_domain( 'https://snap.licdn.com/', 'cacsp_option_marketing_scripts' ) 
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_images' );
-		update_option( 'cacsp_option_markerting_images', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_images' );
+		update_option( 'cacsp_option_marketing_images', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://px.ads.linkedin.com/', 'cacsp_option_markerting_images' ) . 
-			cacsp_check_existing_domain( 'https://www.linkedin.com/', 'cacsp_option_markerting_images' ) 
+			cacsp_check_existing_domain( 'https://px.ads.linkedin.com/', 'cacsp_option_marketing_images' ) . 
+			cacsp_check_existing_domain( 'https://www.linkedin.com/', 'cacsp_option_marketing_images' ) 
 		), false );
     }
 
@@ -216,15 +216,15 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 
     // Facebook Pixel
     if ( intval( isset( $_POST['cacsp_option_quickstart_facebook_pixel'] ) ) ) {
-    	$cacsp_option_old = get_option( 'cacsp_option_markerting_scripts' );
-		update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( 
+    	$cacsp_option_old = get_option( 'cacsp_option_marketing_scripts' );
+		update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://connect.facebook.net/', 'cacsp_option_markerting_scripts' ) 
+			cacsp_check_existing_domain( 'https://connect.facebook.net/', 'cacsp_option_marketing_scripts' ) 
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_images' );
-		update_option( 'cacsp_option_markerting_images', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_images' );
+		update_option( 'cacsp_option_marketing_images', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://www.facebook.com/', 'cacsp_option_markerting_images' ) 
+			cacsp_check_existing_domain( 'https://www.facebook.com/', 'cacsp_option_marketing_images' ) 
 		), false );
     }
 
@@ -267,23 +267,23 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 			cacsp_check_existing_domain( 'https://*.hsappstatic.net/', 'cacsp_option_statistics_images' ) . 
 			cacsp_check_existing_domain( 'https://*.hsforms.com/', 'cacsp_option_statistics_images' ) 
 		), false );
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_frames' );
-		update_option( 'cacsp_option_markerting_frames', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_frames' );
+		update_option( 'cacsp_option_marketing_frames', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://app.hubspot.com/', 'cacsp_option_markerting_frames' ) 
+			cacsp_check_existing_domain( 'https://app.hubspot.com/', 'cacsp_option_marketing_frames' ) 
 		), false );
-    	$cacsp_option_old = get_option( 'cacsp_option_markerting_scripts' );
-		update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( 
+    	$cacsp_option_old = get_option( 'cacsp_option_marketing_scripts' );
+		update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://js.hscollectedforms.net/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://js.usemessages.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://js.hs-banner.com/', 'cacsp_option_markerting_scripts' ) . 
-			cacsp_check_existing_domain( 'https://js.hubspot.com/', 'cacsp_option_markerting_scripts' )
+			cacsp_check_existing_domain( 'https://js.hscollectedforms.net/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://js.usemessages.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://js.hs-banner.com/', 'cacsp_option_marketing_scripts' ) . 
+			cacsp_check_existing_domain( 'https://js.hubspot.com/', 'cacsp_option_marketing_scripts' )
 		), false );	
-		$cacsp_option_old = get_option( 'cacsp_option_markerting_images' );
-		update_option( 'cacsp_option_markerting_images', cacsp_sanitize_domains( 
+		$cacsp_option_old = get_option( 'cacsp_option_marketing_images' );
+		update_option( 'cacsp_option_marketing_images', cacsp_sanitize_domains( 
 			$cacsp_option_old . 
-			cacsp_check_existing_domain( 'https://*.hubspotusercontent-eu1.net/', 'cacsp_option_markerting_images' ) 
+			cacsp_check_existing_domain( 'https://*.hubspotusercontent-eu1.net/', 'cacsp_option_marketing_images' ) 
 		), false );
     }
 
@@ -418,7 +418,7 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 		), false );
     }
 
-    // Twitter
+    // Twitter / X
     if ( intval( isset( $_POST['cacsp_option_quickstart_twitter'] ) ) ) {
 		$cacsp_option_old = get_option( 'cacsp_option_experience_scripts' );
 		update_option( 'cacsp_option_experience_scripts', cacsp_sanitize_domains( 
@@ -515,6 +515,15 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
 		), false );
     }
 
+	// WordPress CDN
+    if ( intval( isset( $_POST['cacsp_option_quickstart_wp_cdn'] ) ) ) {
+		$cacsp_option_old = get_option( 'cacsp_option_experience_images' );
+		update_option( 'cacsp_option_experience_images', cacsp_sanitize_domains( 
+			$cacsp_option_old . 
+			cacsp_check_existing_domain( 'https://s.w.org/', 'cacsp_option_experience_images' ) 
+		), false );
+    }
+
 	// Instagram
     if ( intval( isset( $_POST['cacsp_option_quickstart_instagram'] ) ) ) {
 		$cacsp_option_old = get_option( 'cacsp_option_experience_images' );
@@ -600,14 +609,14 @@ elseif ( isset( $_POST['save_cacsp_settings_quickstart'] ) && $can_change_all ) 
         update_option( 'cacsp_option_experience_worker', cacsp_sanitize_domains( $_POST['cacsp_option_experience_worker'] ) );
     }
     // Marketing
-    update_option( 'cacsp_option_markerting_scripts', cacsp_sanitize_domains( $_POST['cacsp_option_markerting_scripts'] ) );
-    update_option( 'cacsp_option_markerting_images', cacsp_sanitize_domains( $_POST['cacsp_option_markerting_images'] ) );
-    update_option( 'cacsp_option_markerting_frames', cacsp_sanitize_domains( $_POST['cacsp_option_markerting_frames'] ) );
+    update_option( 'cacsp_option_marketing_scripts', cacsp_sanitize_domains( $_POST['cacsp_option_marketing_scripts'] ) );
+    update_option( 'cacsp_option_marketing_images', cacsp_sanitize_domains( $_POST['cacsp_option_marketing_images'] ) );
+    update_option( 'cacsp_option_marketing_frames', cacsp_sanitize_domains( $_POST['cacsp_option_marketing_frames'] ) );
     if ( $cacsp_option_forms ) {
-        update_option( 'cacsp_option_markerting_forms', cacsp_sanitize_domains( $_POST['cacsp_option_markerting_forms'] ) );
+        update_option( 'cacsp_option_marketing_forms', cacsp_sanitize_domains( $_POST['cacsp_option_marketing_forms'] ) );
     }
     if ( $cacsp_option_worker ) {
-        update_option( 'cacsp_option_markerting_worker', cacsp_sanitize_domains( $_POST['cacsp_option_markerting_worker'] ) );
+        update_option( 'cacsp_option_marketing_worker', cacsp_sanitize_domains( $_POST['cacsp_option_marketing_worker'] ) );
     }
 
 	cacsp_save_error_message_js();

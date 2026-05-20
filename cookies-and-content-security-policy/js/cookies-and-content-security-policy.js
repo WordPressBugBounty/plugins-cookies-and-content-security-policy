@@ -16,6 +16,18 @@ if (cacspMessages.cacspWpEngineCompatibilityMode === '1') {
 	CACSP_COOKIE_NAME = 'wpe-us';
 }
 
+function normalizeCookiesAndContentPolicyCookie() {
+	var cookieValue = Cookies.get(CACSP_COOKIE_NAME);
+	if (!cookieValue || !cookieValue.includes('markerting')) {
+		return cookieValue;
+	}
+	var normalizedCookieValue = cookieValue.replaceAll('markerting', 'marketing');
+	var expires = parseInt(cacspMessages.cacspExpires);
+	var secure = location.protocol === 'https:';
+	Cookies.set(CACSP_COOKIE_NAME, normalizedCookieValue, { expires: expires, sameSite: 'Lax', secure: secure });
+	return normalizedCookieValue;
+}
+
 function cookiesAndContentPolicyModal() {
 	if (!Cookies.get(CACSP_COOKIE_NAME) && !jQuery('body').hasClass('modal-cacsp-do-not-show-cookie-modal') && !jQuery('html').hasClass('et-fb-app-frame')) {
 		// Show info modal
@@ -79,8 +91,9 @@ function openCookiesAndContentPolicySettings(link) {
 	jQuery('.modal-cacsp-box.modal-cacsp-box-settings').addClass('modal-cacsp-box-show');
 	jQuery('html').removeClass('modal-cacsp-open-no-backdrop');
 	// Set the toggles according to the users settings
-	if (Cookies.get(CACSP_COOKIE_NAME)) {
-		cookie_filter = JSON.parse(Cookies.get(CACSP_COOKIE_NAME));
+	var cookieValue = normalizeCookiesAndContentPolicyCookie();
+	if (cookieValue) {
+		cookie_filter = JSON.parse(cookieValue);
 		if (cookie_filter) {
 			jQuery.each(cookie_filter, function( index, value ) {
 				jQuery('.modal-cacsp-box .modal-cacsp-box-settings-list ul li a[data-accepted-cookie=' + value + ']').addClass('modal-cacsp-toggle-switch-active');
@@ -368,17 +381,18 @@ function googleConsentMode() {
 		hasStatistics = false;
 		hasExperience = false;
 		waitForUpdate = 500;
-		if (Cookies.get(CACSP_COOKIE_NAME)) {
-			hasMarketing = Cookies.get(CACSP_COOKIE_NAME).includes("markerting");
+		var cookieValue = normalizeCookiesAndContentPolicyCookie();
+		if (cookieValue) {
+			hasMarketing = cookieValue.includes("marketing");
 		}
-		if (Cookies.get(CACSP_COOKIE_NAME)) {
-			hasStatistics = Cookies.get(CACSP_COOKIE_NAME).includes("statistics");
+		if (cookieValue) {
+			hasStatistics = cookieValue.includes("statistics");
 		}
-		if (Cookies.get(CACSP_COOKIE_NAME)) {
-			hasExperience = Cookies.get(CACSP_COOKIE_NAME).includes("experience");
+		if (cookieValue) {
+			hasExperience = cookieValue.includes("experience");
 		}
 	}
-	if (cacspMessages.cacspOptionGoogleConsentMode == '1' && Cookies.get(CACSP_COOKIE_NAME)) {
+	if (cacspMessages.cacspOptionGoogleConsentMode == '1' && normalizeCookiesAndContentPolicyCookie()) {
 		var gtag = cacspEnsureGtag();
 		gtag('consent', 'update', {
 			'ad_storage': (hasMarketing ? 'granted' : 'denied'), 

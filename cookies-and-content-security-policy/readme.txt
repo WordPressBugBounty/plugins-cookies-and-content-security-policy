@@ -6,7 +6,7 @@ Short Description: Be fully GDPR and CCPA compliant through Content Security Pol
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.39
+Stable tag: 2.40
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,8 +88,8 @@ In Swedish
 * https://studiocanalis.se/
 * https://yogajona.se/
 * https://handelskammaren.com/
-* https://careon.se/
-* https://bostadsbevaka.se/
+* https://akkafrakt.se/
+* https://mim.m.se/
 
 = Is the plugin responsive? =
 
@@ -193,6 +193,13 @@ Yes, if you go to Settings and check "Save proof of consent". The consent data i
 13. Look in console to see what is blocked. In this case you'd probably like to add https://platform.twitter.com/ to Experience > Script. Or just use Quickstart and choose Twitter.
  
 == Changelog ==
+
+= 2.40 =
+
+* Fixing typo markerting to marketing
+* Added 2 missing settings to uninstall
+* Renamed Twitter to Twitter / X in Quickstart
+* Quickstart for WordPress CDN
 
 = 2.39 =
 
