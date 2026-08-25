@@ -41,6 +41,12 @@ if ( version_compare( $installed_version, '2.40', '<' ) ) {
 }
 
 if ( version_compare( $installed_version, '2.41', '<' ) ) {
+    cacsp_migrate_option_key( 'cacsp_option_markerting_scripts', 'cacsp_option_marketing_scripts' );
+    cacsp_migrate_option_key( 'cacsp_option_markerting_images', 'cacsp_option_marketing_images' );
+    cacsp_migrate_option_key( 'cacsp_option_markerting_frames', 'cacsp_option_marketing_frames' );
+    cacsp_migrate_option_key( 'cacsp_option_markerting_forms', 'cacsp_option_marketing_forms' );
+    cacsp_migrate_option_key( 'cacsp_option_markerting_worker', 'cacsp_option_marketing_worker' );
+
     $cacsp_old_options = array(
         'cacsp_option_markerting_scripts', 
         'cacsp_option_markerting_images', 

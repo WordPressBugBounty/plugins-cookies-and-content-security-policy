@@ -4,9 +4,9 @@ Donate link: https://www.paypal.com/donate/?hosted_button_id=86UYSXNUA2LHY
 Tags: cookies, cookie bar, gdpr, ccpa, content security policy
 Short Description: Be fully GDPR and CCPA compliant through Content Security Policy. Blocks cookies and unwanted external content.
 Requires at least: 5.0
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.40
+Stable tag: 2.41
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -193,6 +193,11 @@ Yes, if you go to Settings and check "Save proof of consent". The consent data i
 13. Look in console to see what is blocked. In this case you'd probably like to add https://platform.twitter.com/ to Experience > Script. Or just use Quickstart and choose Twitter.
  
 == Changelog ==
+
+= 2.41 =
+
+* Tested in WordPress 7.1, no issues
+* Remove legacy for old markerting typo
 
 = 2.40 =
 

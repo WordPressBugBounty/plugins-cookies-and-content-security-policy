@@ -1,9 +1,8 @@
 <?php
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
-function get_cacsp_options( $option, $new_line_to_space = false, $fallback = '', $esc = false ) {
+function get_cacsp_options( $option_name, $new_line_to_space = false, $fallback = '', $esc = false ) {
 
-	$option_name = $option;
 	$cacsp_option_use = false;
 	if ( is_multisite() ) {
 		$cacsp_site_id = get_main_site_id();
@@ -20,18 +19,6 @@ function get_cacsp_options( $option, $new_line_to_space = false, $fallback = '',
 		$option = get_blog_option( $cacsp_site_id, $option_name );
 	} else {
 		$option = get_option( $option_name );
-	}
-
-	if ( !$option && strpos( $option_name, 'cacsp_option_marketing_' ) === 0 ) {
-		// TODO: Remove after 2.40
-		$legacy_option_name = str_replace( 'cacsp_option_marketing_', 'cacsp_option_markerting_', $option_name, $count );
-		if ( $count === 1 ) {
-			if ( is_multisite() && $cacsp_option_use != 'default' ) {
-				$option = get_blog_option( $cacsp_site_id, $legacy_option_name );
-			} else {
-				$option = get_option( $legacy_option_name );
-			}
-		}
 	}
 
 	if ( !$option && strlen( $fallback ) > 0 ) {
